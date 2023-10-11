@@ -6,7 +6,7 @@ def footer() -> rx.Component:
         rx.image(src="favicon.ico"),
         rx.link(
             "Github @Garosoro",
-            href="https://github.com/",
+            href="https://github.com",
             is_external=True
         ),
         rx.text(f"© {datetime.date.today().year} link.bio")
