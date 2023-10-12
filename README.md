@@ -10,13 +10,15 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Próxima Clase: 11/10/2023
+## Próxima Clase: Miércoles 18/10/2023
 ### ⏰ 20:00 (hora España) en directo desde [Twitch](https://twitch.tv/mouredev)
-### 🌐 Consulta el horario por país y crea un recordatorio desde [Discord](https://discord.gg/szCvz8xV?event=1159409862787211284)
+### 🌐 Consulta el horario por país y crea un recordatorio desde [Discord](https://discord.gg/mouredev?event=1161934670380933151)
 
 ## Clases anteriores
 
 ### Clase 1 (04/10/2023): Introducción, instalación y configuración ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1942562640?t=00h18m05s)
+
+### Clase 2 (11/10/2023): Componentes visuales ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1948407270?t=00h20m02s)
 
 ## Proyecto
 
@@ -74,7 +76,7 @@ Si quieres unirte a nuestra comunidad de desarrollo, aprender programación de A
 ![GitHub Followers](https://img.shields.io/github/followers/mouredev?style=social)
 ![GitHub Followers](https://img.shields.io/github/stars/mouredev?style=social)
 
-Soy ingeniero de software desde hace más de 12 años. Desde hace 4 años combino mi trabajo desarrollando Apps con creación de contenido formativo sobre programación y tecnología en diferentes redes sociales como **[@mouredev](https://moure.dev)**.
+Soy ingeniero de software desde hace más de 13 años. Desde hace 5 años combino mi trabajo desarrollando Apps con creación de contenido formativo sobre programación y tecnología en diferentes redes sociales como **[@mouredev](https://moure.dev)**.
 
 ### En mi perfil de GitHub tienes más información
 
