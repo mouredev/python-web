@@ -4,16 +4,19 @@ from link_bio.components.footer import footer
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 
+
 class State(rx.State):
     pass
+
 
 def index() -> rx.Component:
     return rx.vstack(
         navbar(),
         header(),
         links(),
-        footer(),
+        footer()
     )
+
 
 app = rx.App()
 app.add_page(index)
