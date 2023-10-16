@@ -1,14 +1,15 @@
 import reflex as rx
 
+
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.text(
-            "Garosoro",
-            height="40px",
+            "mouredev",
+            height="40px"
         ),
-        position="center",
+        position="sticky",
         bg="blue",
         padding_x="16px",
         padding_y="8px",
-        z_index="999",
+        z_index="999"
     )

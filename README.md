@@ -10,13 +10,22 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Inicio curso: 04/10/2023
-### ⏰ 20:00 (hora España)
-### 🟣 En directo desde [Twitch](https://twitch.tv/mouredev)
-### 🌐 Consulta el horario por país y crea un recordatorio desde [Discord](https://discord.gg/YTsntUmH?event=1156638368864665760)
+## Próxima Clase: Miércoles 18/10/2023
+### ⏰ 20:00 (hora España) en directo desde [Twitch](https://twitch.tv/mouredev)
+### 🌐 Consulta el horario por país y crea un recordatorio desde [Discord](https://discord.gg/mouredev?event=1161934670380933151)
 
-Durante el curso aprenderemos desarrollo web con Python puro utilizando el framework [Reflex](https://github.com/reflex-dev/reflex). Realizaremos un proyecto práctico que consistirá en desarrollar y publicar mi nueva web de links [moure.dev](https://moure.dev/) (añadiéndole nuevas funcionalidades).
+## Clases anteriores
+
+### Clase 1 (04/10/2023): Introducción, instalación y configuración ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1942562640?t=00h18m05s)
+
+### Clase 2 (11/10/2023): Componentes visuales ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1948407270?t=00h20m02s)
+
+## Proyecto
+
+Durante el curso aprenderemos desarrollo web con Python puro utilizando el framework [Reflex](https://github.com/reflex-dev/reflex). Realizaremos un proyecto práctico que consistirá en desarrollar y publicar mi nueva web de links [moure.dev](https://moure.dev/) (añadiéndole muchas nuevas funcionalidades).
 Todo el código estará disponible para que cualquiera pueda usarlo.
+
+### 💻 [Accede al código del proyecto](./link_bio)
 
 ## Información importante y preguntas frecuentes
 
@@ -24,12 +33,19 @@ Este curso se encuentra en desarrollo. Todo el contenido se crea en directo desd
 
 Una vez se finalice, se creará un vídeo que agrupe todas las clases y se publicará en [YouTube](https://www.youtube.com/@mouredev).
 
+* Es un curso desde cero y no necesitas conocimientos previos sobre desarrollo web.
 * Recuerda que he creado en el [Discord](https://discord.gg/mouredev) un canal "🐍python" para que puedas comentar lo que quieras.
 
 ## Enlaces de interés
 
 * [Web oficial de Python](https://www.python.org/)
 * [Web oficial de Reflex](https://reflex.dev/)
+* [Documentación oficial de Reflex](https://reflex.dev/docs/)
+* [Repositorio en GitHub de Reflex](https://github.com/reflex-dev/reflex)
+* [Visual Studio Code](https://vscode.dev/)
+* [Documentación CSS](https://www.w3schools.com/css/)
+* [Curso de CSS](https://web.dev/learn/css/)
+* [Chakra UI](https://chakra-ui.com/)
 
 ## Curso de Python desde cero
 ### Aprende Python desde sus fundamentos
@@ -60,7 +76,7 @@ Si quieres unirte a nuestra comunidad de desarrollo, aprender programación de A
 ![GitHub Followers](https://img.shields.io/github/followers/mouredev?style=social)
 ![GitHub Followers](https://img.shields.io/github/stars/mouredev?style=social)
 
-Soy ingeniero de software desde hace más de 12 años. Desde hace 4 años combino mi trabajo desarrollando Apps con creación de contenido formativo sobre programación y tecnología en diferentes redes sociales como **[@mouredev](https://moure.dev)**.
+Soy ingeniero de software desde hace más de 13 años. Desde hace 5 años combino mi trabajo desarrollando Apps con creación de contenido formativo sobre programación y tecnología en diferentes redes sociales como **[@mouredev](https://moure.dev)**.
 
 ### En mi perfil de GitHub tienes más información
 
