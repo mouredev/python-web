@@ -10,9 +10,8 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Próxima Clase: Miércoles 25/10/2023
-### ⏰ 20:00 (hora España) en directo desde [Twitch](https://twitch.tv/mouredev)
-### 🌐 Consulta el horario por país y crea un recordatorio desde [Discord](https://discord.gg/mouredev?event=1164510745053110303)
+## Próxima Clase: Muy pronto
+### Avisaré en redes sociales y actualizaré este repositorio con la siguiente fecha.
 
 ## Clases anteriores
 
@@ -24,6 +23,9 @@
 
 ### Clase 3 (18/10/2023): Estilos
 #### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1954230750?t=00h18m23s)
+
+### Clase 4 (25/10/2023): Colores, fuentes e imágenes
+#### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1960113237?t=00h24m03s)
 
 ## Proyecto
 
