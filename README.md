@@ -53,6 +53,8 @@ Una vez se finalice, se creará un vídeo que agrupe todas las clases y se publi
 * [Documentación CSS](https://www.w3schools.com/css/)
 * [Curso de CSS](https://web.dev/learn/css/)
 * [Chakra UI](https://chakra-ui.com/)
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
 
 ## Curso de Python desde cero
 ### Aprende Python desde sus fundamentos
