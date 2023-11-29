@@ -1,7 +1,7 @@
 # Python Web
 
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/Reflex-0.2.8+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://fastapi.tiangolo.com)
+[![Reflex](https://img.shields.io/badge/Reflex-0.2.8+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
 
 ## Curso para aprender desarrollo web frontend con Python puro y Reflex desde cero
 
@@ -10,8 +10,9 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Próxima Clase: Muy pronto
-### Avisaré en redes sociales y actualizaré este repositorio con la siguiente fecha.
+## Próxima Clase: 30/11/23
+### 20:00h (España) en [Twitch](https://twitch.tv/mouredev)
+#### 🔔 [Crea un recordatorio](https://discord.gg/D2cHjtnK?event=1178660927005020180)
 
 ## Clases anteriores
 
