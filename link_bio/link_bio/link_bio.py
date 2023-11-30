@@ -33,12 +33,25 @@ def index() -> rx.Component:
 
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
-    style=styles.BASE_STYLE
+    style=styles.BASE_STYLE,
+    head_components=[
+        rx.script(src="https://www.googletagmanager.com/gtag/js?id=G-3YGHT3XJFS"),
+        rx.script(
+            """
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3YGHT3XJFS');
+"""
+        ),
+    ],
 )
+
 app.add_page(
     index,
     title="MoureDev | Te enseño programación y desarrollo de software",
     description="Hola, mi nombre es Brais Moure. Soy ingeniero de software, desarrollador freelance full-stack y divulgador.",
     image="avatar.jpg"
 )
+
 app.compile()
