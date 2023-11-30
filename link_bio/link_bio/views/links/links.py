@@ -33,7 +33,7 @@ def links() -> rx.Component:
             const.CODE_CHALLENGES_URL
         ),
         link_button(
-            "YouTube (canal secundario)",
+            "YouTube ⓘ canal secundario",
             "Emisiones en directo destacadas",
             "icons/youtube.svg",
             const.YOUTUBE_SECONDARY_URL

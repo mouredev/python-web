@@ -7,7 +7,7 @@ def link_sponsor(imagen: str, url: str, alt: str) -> rx.Component:
         rx.image(
             src=imagen,
             height="100%",
-            width="auto",
+            width="100%",
             alt=alt
         ),
         href=url,
