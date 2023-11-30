@@ -14,6 +14,7 @@ from link_bio.styles.styles import Size
 
 def index() -> rx.Component:
     return rx.box(
+        rx.script("document.documentElement.lang='es'"),
         navbar(),
         rx.center(
             rx.vstack(

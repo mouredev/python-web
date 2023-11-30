@@ -10,7 +10,7 @@ def footer() -> rx.Component:
         rx.image(
             src="logo.png",
             height=Size.VERY_BIG.value,
-            weight=Size.VERY_BIG.value,
+            width=Size.VERY_BIG.value,
             alt="Logotipo de MoureDev. Una \"eme\" entre llaves."
         ),
         rx.link(
