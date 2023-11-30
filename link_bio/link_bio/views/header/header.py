@@ -1,11 +1,10 @@
 import reflex as rx
+import datetime
+import link_bio.constants as const
+from link_bio.styles.styles import Size
+from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon
 from link_bio.components.info_text import info_text
-from link_bio.styles.styles import Size as Size
-from link_bio.styles.colors import Color as Color
-from link_bio.styles.colors import TextColor as TextColor
-import link_bio.constants as const
-import datetime
 
 
 def header() -> rx.Component:
@@ -34,27 +33,33 @@ def header() -> rx.Component:
                 rx.hstack(
                     link_icon(
                         "icons/github.svg",
-                        const.GITHUB_URL
+                        const.GITHUB_URL,
+                        "GitHub"
                     ),
                     link_icon(
                         "icons/x.svg",
-                        const.TWITTER_X_URL
+                        const.TWITTER_X_URL,
+                        "Twitter/X"
                     ),
                     link_icon(
                         "icons/instagram.svg",
-                        const.INSTAGRAM_URL
+                        const.INSTAGRAM_URL,
+                        "Instagram"
                     ),
                     link_icon(
                         "icons/tiktok.svg",
-                        const.TIKTOK_URL
+                        const.TIKTOK_URL,
+                        "TikTok"
                     ),
                     link_icon(
                         "icons/spotify.svg",
-                        const.SPOTIFY_URL
+                        const.SPOTIFY_URL,
+                        "Spotify"
                     ),
                     link_icon(
                         "icons/linkedin.svg",
-                        const.LINKEDIN_URL
+                        const.LINKEDIN_URL,
+                        "LinkedIn"
                     ),
                     spacing=Size.LARGE.value
                 ),

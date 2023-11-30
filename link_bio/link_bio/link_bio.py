@@ -1,15 +1,15 @@
 import reflex as rx
+import link_bio.styles.styles as styles
 from link_bio.components.navbar import navbar
 from link_bio.components.footer import footer
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 from link_bio.views.sponsors.sponsors import sponsors
-import link_bio.styles.styles as styles
-from link_bio.styles.styles import Size as Size
+from link_bio.styles.styles import Size
 
 
-class State(rx.State):
-    pass
+# class State(rx.State):
+#     pass
 
 
 def index() -> rx.Component:
@@ -31,6 +31,7 @@ def index() -> rx.Component:
 
 
 app = rx.App(
+    stylesheets=styles.STYLESHEETS,
     style=styles.BASE_STYLE
 )
 app.add_page(

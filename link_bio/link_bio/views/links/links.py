@@ -1,8 +1,8 @@
 import reflex as rx
+import link_bio.constants as const
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
-from link_bio.styles.styles import Size as Size
-import link_bio.constants as const
+from link_bio.styles.styles import Size
 
 
 def links() -> rx.Component:
@@ -18,11 +18,11 @@ def links() -> rx.Component:
             "YouTube",
             "Tutoriales sobre desarrollo de software semanales",
             "icons/youtube.svg",
-            const.TWITCH_URL
+            const.YOUTUBE_URL
         ),
         link_button(
             "Discord",
-            "El chat y lo grupos de estudio de la comunidad",
+            "El chat y los grupos de estudio de la comunidad",
             "icons/discord.svg",
             const.DISCORD_URL
         ),
@@ -54,7 +54,7 @@ def links() -> rx.Component:
         ),
         link_button(
             "Mi setup",
-            "Listado con todos los elementos que uso en mi trabjao",
+            "Listado con todos los elementos que uso en mi trabajo",
             "icons/setup.svg",
             const.SETUP_URL
         ),
@@ -66,7 +66,7 @@ def links() -> rx.Component:
         ),
         link_button(
             "Invítame a un café",
-            "¿Quieres ayudarme a que siga creado contenido?",
+            "¿Quieres ayudarme a que siga creando contenido?",
             "icons/coffee.svg",
             const.COFFEE_URL
         ),
