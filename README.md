@@ -10,9 +10,12 @@
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Próxima Clase: 30/11/23
-### 20:00h (España) en [Twitch](https://twitch.tv/mouredev)
-#### 🔔 [Crea un recordatorio](https://discord.gg/D2cHjtnK?event=1178660927005020180)
+## Primera parte finalizada... ¿Ya está?
+Muy pronto tendrás un curso editado publicado en [YouTube](https://youtube.com/@mouredev) con todo el contenido de esta primera parte... ¡Pero esto no acaba aquí!
+
+Este curso continuará en una segunda parte donde aprenderemos sobre backend, routers, apis, bases de datos y mucho más...
+
+*Estén atento al repositorio y mis redes sociales para no perderte la continuación.*
 
 ## Clases anteriores
 
@@ -27,6 +30,9 @@
 
 ### Clase 4 (25/10/2023): Colores, fuentes e imágenes
 #### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1960113237?t=00h24m03s)
+
+### Clase 5 (30/11/2023): Responsive, accesibilidad y despliegue
+#### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1991405421?t=00h17m05s)
 
 ## Proyecto
 
@@ -56,6 +62,7 @@ Una vez se finalice, se creará un vídeo que agrupe todas las clases y se publi
 * [Chakra UI](https://chakra-ui.com/)
 * [Google Fonts](https://fonts.google.com/)
 * [Font Awesome](https://fontawesome.com/)
+* [Vercel](https://vercel.com/)
 
 ## Curso de Python desde cero
 ### Aprende Python desde sus fundamentos
