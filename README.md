@@ -3,52 +3,68 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
 [![Reflex](https://img.shields.io/badge/Reflex-0.3.6+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
 
-## Curso para aprender desarrollo web frontend con Python puro y Reflex desde cero
+## Curso de 6 horas en vídeo para aprender desarrollo web frontend con Python puro y Reflex desde cero.
 
 ![](./Images/header.jpg)
 
 ### Proyecto realizado durante emisiones en directo desde [Twitch](https://twitch.tv/mouredev)
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
-## Primera parte finalizada... ¿Ya está?
-Muy pronto tendrás un curso editado publicado en [YouTube](https://youtube.com/@mouredev) con todo el contenido de esta primera parte... ¡Pero esto no acaba aquí!
+## Tutorial en vídeo
 
-Este curso continuará en una segunda parte donde aprenderemos sobre backend, routers, apis, bases de datos y mucho más...
+<a href="https://youtu.be/n2YrGsXJC6Y"><img src="http://i3.ytimg.com/vi/n2YrGsXJC6Y/maxresdefault.jpg" style="height: 50%; width:50%;"/></a>
 
-*Estén atento al repositorio y mis redes sociales para no perderte la continuación.*
+- [Curso de Python Web](https://youtu.be/n2YrGsXJC6Y)
+- [Lección 1 - Introducción](https://youtu.be/n2YrGsXJC6Y&t=272)
+- [Lección 2 - Características](https://youtu.be/n2YrGsXJC6Y&t=1147)
+- [Lección 3 - Instalación](https://youtu.be/n2YrGsXJC6Y&t=1551)
+- [Lección 4 - Primeros pasos](https://youtu.be/n2YrGsXJC6Y&t=3043)
+- [Lección 5 - Fundamentos](https://youtu.be/n2YrGsXJC6Y&t=3442)
+- [Lección 6 - Hola mundo](https://youtu.be/n2YrGsXJC6Y&t=4259)
+- [Lección 7 - Componentes](https://youtu.be/n2YrGsXJC6Y&t=4593)
+- [Lección 8 - Maquetación](https://youtu.be/n2YrGsXJC6Y&t=6805)
+- [Lección 9 - Estilos](https://youtu.be/n2YrGsXJC6Y&t=9190)
+- [Lección 10 - Colores e iconos](https://youtu.be/n2YrGsXJC6Y&t=13807)
+- [Lección 11 - Fuentes](https://youtu.be/n2YrGsXJC6Y&t=15124)
+- [Lección 12 - Imágenes](https://youtu.be/n2YrGsXJC6Y&t=16249)
+- [Lección 13 - Fuentes remotas](https://youtu.be/n2YrGsXJC6Y&t=17505)
+- [Lección 14 - Diseño responsive](https://youtu.be/n2YrGsXJC6Y&t=18225)
+- [Lección 15 - Accesibilidad](https://youtu.be/n2YrGsXJC6Y&t=19058)
+- [Lección 16 - Despliegue](https://youtu.be/n2YrGsXJC6Y&t=19283)
+- [Próximos pasos](https://youtu.be/n2YrGsXJC6Y&t=20892)
 
-## Clases anteriores
-
-### Clase 1 (04/10/2023): Introducción, instalación y configuración 
-#### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1942562640?t=00h18m05s)
-
-### Clase 2 (11/10/2023): Componentes visuales 
-#### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1948407270?t=00h20m02s)
-
-### Clase 3 (18/10/2023): Estilos
-#### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1954230750?t=00h18m23s)
-
-### Clase 4 (25/10/2023): Colores, fuentes e imágenes
-#### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1960113237?t=00h24m03s)
-
-### Clase 5 (30/11/2023): Responsive, accesibilidad y despliegue
-#### ▶️ [Ver clase en vídeo](https://www.twitch.tv/videos/1991405421?t=00h17m05s)
+> Tienes un canal llamado **"python"** en el servidor de **[Discord](https://mouredev.com/discord)** de la comunidad para preguntar, compartir y ayudar.
 
 ## Proyecto
 
-Durante el curso aprenderemos desarrollo web con Python puro utilizando el framework [Reflex](https://github.com/reflex-dev/reflex). Realizaremos un proyecto práctico que consistirá en desarrollar y publicar mi nueva web de links [moure.dev](https://moure.dev/) (añadiéndole muchas nuevas funcionalidades).
-Todo el código estará disponible para que cualquiera pueda usarlo.
+<a href="https://moure.dev"><img src="./Images/web.png" style="height: 50%; width:50%;"/></a>
+<a href="./link_bio"><img src="./Images/web.gif" style="height: 50%; width:50%;"/></a>
+
+Durante el curso aprenderemos desarrollo web con Python puro utilizando el framework [Reflex](https://github.com/reflex-dev/reflex). Realizaremos un proyecto práctico que consistirá en desarrollar y publicar mi nueva web de links [moure.dev](https://moure.dev/) (añadiéndole nuevas funcionalidades).
+Todo el código está disponible para que cualquiera pueda usarlo.
 
 ### 💻 [Accede al código del proyecto](./link_bio)
 
+## Tutorial extra en vídeo (+3 horas)
+
+<a href="https://youtu.be/h8Tn0ITRoQs"><img src="http://i3.ytimg.com/vi/h8Tn0ITRoQs/maxresdefault.jpg" style="height: 50%; width:50%;"/></a>
+
+Proyecto práctico extra de código libre que consistirá en desarrollar y publicar la web del [Calendario de aDEViento](https://adviento.dev/) de la comunidad. Una activdad donde repartimos cursos y libros sobre programación en Navidad.
+
+### 💻 [Accede al código del proyecto extra](https://github.com/mouredev/adeviento-web)
+
 ## Información importante y preguntas frecuentes
 
-Este curso se encuentra en desarrollo. Todo el contenido se crea en directo desde [Twitch](https://www.twitch.tv/mouredev), y en este repositorio podrás encontrar las clases en vídeo, el código programado, enlaces de interés y la información de la próxima clase.
-
-Una vez se finalice, se creará un vídeo que agrupe todas las clases y se publicará en [YouTube](https://www.youtube.com/@mouredev).
+Todo el contenido se crea en directo desde [Twitch](https://www.twitch.tv/mouredev), y en este repositorio podrás encontrar las clases en vídeo, el código programado, enlaces de interés y la información relevante.
 
 * Es un curso desde cero y no necesitas conocimientos previos sobre desarrollo web.
 * Recuerda que he creado en el [Discord](https://discord.gg/mouredev) un canal "🐍python" para que puedas comentar lo que quieras.
+
+## Curso finalizado... ¿Ya está?
+
+Este curso continuará en una segunda parte donde aprenderemos sobre backend, routers, APIs, bases de datos y mucho más...
+
+*Estén atento al repositorio y mis [redes sociales](https://moure.dev) para no perderte la continuación.*
 
 ## Enlaces de interés
 
