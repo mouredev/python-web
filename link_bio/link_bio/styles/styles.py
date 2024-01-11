@@ -29,7 +29,8 @@ class Size(Enum):
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
-    "background_color": Color.BACKGROUND.value,
+    # Eliminar el !important en futuras versiones
+    "background_color": Color.BACKGROUND.value + "!important",
     rx.Heading: {
         "color": TextColor.HEADER.value,
         "font_family": Font.TITLE.value,

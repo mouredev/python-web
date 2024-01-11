@@ -47,11 +47,21 @@ gtag('config', 'G-3YGHT3XJFS');
     ],
 )
 
+title = "MoureDev | Te enseño programación y desarrollo de software"
+description = "Hola, mi nombre es Brais Moure. Soy ingeniero de software, desarrollador freelance full-stack y divulgador."
+preview = "https://moure.dev/preview.jpg"
+
 app.add_page(
     index,
-    title="MoureDev | Te enseño programación y desarrollo de software",
-    description="Hola, mi nombre es Brais Moure. Soy ingeniero de software, desarrollador freelance full-stack y divulgador.",
-    image="avatar.jpg"
+    title=title,
+    description=description,
+    image="avatar.jpg",
+    meta=[
+        {"name": "og:type", "content": "website"},
+        {"name": "og:title", "content": title},
+        {"name": "og:description", "content": description},
+        {"name": "og:image", "content": preview},
+        {"name": "twitter:card", "content": "summary_large_image"},
+        {"name": "twitter:site", "content": "@mouredev"}
+    ]
 )
-
-app.compile()
