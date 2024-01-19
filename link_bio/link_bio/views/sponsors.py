@@ -10,17 +10,22 @@ def sponsors() -> rx.Component:
         title("Colaboran"),
         rx.responsive_grid(
             link_sponsor(
-                "elgato.png",
+                "/elgato.png",
                 const.ELGATO_URL,
                 "Logotipo de Elgato"
             ),
             link_sponsor(
-                "mvp.png",
+                "/mvp.png",
                 const.MVP_URL,
                 "Logotipo de Microsoft MVP"
             ),
+            link_sponsor(
+                "/githubstar.png",
+                const.GITHUB_STAR_URL,
+                "Logotipo de GitHub Star"
+            ),
             spacing=Size.BIG.value,
-            columns=[1, 2]
+            columns=[1, 3]
         ),
         width="100%",
         align_items="start",

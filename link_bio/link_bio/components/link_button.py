@@ -1,10 +1,9 @@
 import reflex as rx
 import link_bio.styles.styles as styles
-from link_bio.styles.styles import Size
-from link_bio.styles.colors import Color
+from link_bio.styles.styles import Size, Color
 
 
-def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
+def link_button(title: str, body: str, image: str, url: str, is_external=True, highlight=False) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -24,9 +23,11 @@ def link_button(title: str, body: str, image: str, url: str) -> rx.Component:
                     padding_right=Size.SMALL.value
                 ),
                 width="100%"
-            )
+            ),
+            border_color=Color.SECONDARY.value if highlight else None,
+            border_width="2px" if highlight else None
         ),
         href=url,
-        is_external=True,
+        is_external=is_external,
         width="100%"
     )

@@ -19,12 +19,12 @@ Mac/Linux: `python3 -m pip install virtualenv`
 
 Windows: `py -m pip install --user virtualenv`
 
-`python3 -m venv venv`
+`python3 -m venv .venv`
 
 #### Activa el entorno virtual 
-Mac/Linux: `source venv/bin/activate`
+Mac/Linux: `source .venv/bin/activate`
 
-Windows: `.\venv\Scripts\activate`
+Windows: `.\.venv\Scripts\activate`
 
 Para desactivar el entorno virtual: `deactivate`
 

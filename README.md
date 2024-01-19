@@ -12,14 +12,18 @@
 
 ## ⚠️ [NUEVO] Curso de Python Web Avanzado
 
-### 🗓️ Próxima clase: 18/01/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/j9n6SDBa?event=1196493824143396937)
+### 🗓️ Próxima clase: 25/01/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/mouredev?event=1197871062243881010)
+
+### Clases anteriores:
+
+- [Clase 1 [18/01/24]: Actualización, refactor, Router, componentes React y hosting Reflex](https://www.twitch.tv/videos/2036419660?t=00h14m41s)
 
 Continuación del curso desde cero de 6 horas. En esta sección más avanzada se aprenderán diferentes conceptos relacionados con el desarrollo web con Python y Reflex: Router, backend, APIs, eventos, estados, base de datos, Docker, y más...
 
 *Una vez se finalice el curso se creará un vídeo en YouTube, al igual que con la primera parte. Mientras tanto, los vídeos se guardan en Twitch durante 2 meses.*
 
-## Tutorial en vídeo
+## Curso de Python Web: Tutorial en vídeo
 
 <a href="https://youtu.be/n2YrGsXJC6Y"><img src="http://i3.ytimg.com/vi/n2YrGsXJC6Y/maxresdefault.jpg" style="height: 50%; width:50%;"/></a>
 
@@ -69,12 +73,6 @@ Todo el contenido se crea en directo desde [Twitch](https://www.twitch.tv/moured
 * Es un curso desde cero y no necesitas conocimientos previos sobre desarrollo web.
 * Recuerda que he creado en el [Discord](https://discord.gg/mouredev) un canal "🐍python" para que puedas comentar lo que quieras.
 
-## Curso finalizado... ¿Ya está?
-
-Este curso continuará en una segunda parte donde aprenderemos sobre backend, routers, APIs, bases de datos y mucho más...
-
-*Estén atento al repositorio y mis [redes sociales](https://moure.dev) para no perderte la continuación.*
-
 ## Enlaces de interés
 
 * [Web oficial de Python](https://www.python.org/)
@@ -88,6 +86,8 @@ Este curso continuará en una segunda parte donde aprenderemos sobre backend, ro
 * [Google Fonts](https://fonts.google.com/)
 * [Font Awesome](https://fontawesome.com/)
 * [Vercel](https://vercel.com/)
+* [Radix UI](https://www.radix-ui.com/)
+* [Ant Design](https://ant.design/)
 
 ## Curso de Python desde cero
 ### Aprende Python desde sus fundamentos

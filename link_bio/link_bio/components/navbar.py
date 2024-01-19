@@ -1,15 +1,19 @@
 import reflex as rx
 import link_bio.styles.styles as styles
+from link_bio.routes import Route
 from link_bio.styles.styles import Size
 from link_bio.styles.colors import Color
 
 
 def navbar() -> rx.Component:
     return rx.hstack(
-        rx.box(
-            rx.span("moure", color=Color.PRIMARY.value),
-            rx.span("dev", color=Color.SECONDARY.value),
-            style=styles.navbar_title_style
+        rx.link(
+            rx.box(
+                rx.span("moure", color=Color.PRIMARY.value),
+                rx.span("dev", color=Color.SECONDARY.value),
+                style=styles.navbar_title_style
+            ),
+            href=Route.INDEX.value
         ),
         position="sticky",
         bg=Color.CONTENT.value,
