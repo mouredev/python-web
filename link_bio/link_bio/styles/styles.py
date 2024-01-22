@@ -27,10 +27,19 @@ class Size(Enum):
 
 
 BASE_STYLE = {
+    # Eliminar font_family y font_weight por defecto en Text, Box y Link
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.LIGHT.value,
     # Eliminar el !important en futuras versiones
     "background_color": Color.BACKGROUND.value + "!important",
+    rx.Text: {
+        "font_family": Font.DEFAULT.value,
+        "font_weight": FontWeight.LIGHT.value
+    },
+    rx.Box: {
+        "font_family": Font.DEFAULT.value,
+        "font_weight": FontWeight.LIGHT.value
+    },
     rx.Heading: {
         "color": TextColor.HEADER.value,
         "font_family": Font.TITLE.value,
@@ -50,6 +59,8 @@ BASE_STYLE = {
         }
     },
     rx.Link: {
+        "font_family": Font.DEFAULT.value,
+        "font_weight": FontWeight.LIGHT.value,
         "text_decoration": "none",
         "_hover": {}
     }
