@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run build script
-        run: python link_bio/remote_build.sh
+        run: ./link_bio/remote_build.sh
 
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
