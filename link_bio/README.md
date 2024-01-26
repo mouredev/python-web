@@ -46,6 +46,8 @@ Acceder a [http://localhost:3000](http://localhost:3000) (frontend) y a [http://
 
 ## Despliegue
 
+![Flujo moure.dev](../images/flow.png)
+
 ### Frontend
 
 c contiene las instrucciones necesarias para empaquetar el frontend del proyecto y desplegarlo de forma estática. Éste, en concreto, desde [Vercel](https://vercel.com/). Se ejecuta automáticamente desde una [GitHub Action](../.github/workflows/static_build.yml) creada en el repositorio.
