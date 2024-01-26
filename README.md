@@ -1,7 +1,7 @@
 # Python Web
 
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
-[![Reflex](https://img.shields.io/badge/Reflex-0.3.8+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
+[![Reflex](https://img.shields.io/badge/Reflex-0.3.9+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
 
 ## Curso de 6 horas en vídeo para aprender desarrollo web frontend con Python puro y Reflex desde cero.
 
@@ -12,12 +12,13 @@
 
 ## ⚠️ [NUEVO] Curso de Python Web Avanzado
 
-### 🗓️ Próxima clase: 25/01/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/mouredev?event=1197871062243881010)
+### 🗓️ Próxima clase: 01/02/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/mouredev?event=1200405460059172864)
 
 ### Clases anteriores:
 
 - [Clase 1 [18/01/24]: Actualización, refactor, Router, componentes React y hosting Reflex](https://www.twitch.tv/videos/2036419660?t=00h14m41s)
+- [Clase 2 [25/01/24]: Backend, Docker, CORS y GitHub Actions](https://www.twitch.tv/videos/2043357705?t=00h17m22s)
 
 Continuación del curso desde cero de 6 horas. En esta sección más avanzada se aprenderán diferentes conceptos relacionados con el desarrollo web con Python y Reflex: Router, backend, APIs, eventos, estados, base de datos, Docker, y más...
 
