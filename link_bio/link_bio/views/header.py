@@ -7,10 +7,18 @@ from link_bio.components.link_icon import link_icon
 from link_bio.components.info_text import info_text
 
 
-def header(details=True) -> rx.Component:
+def header(details=True, live=False) -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.avatar(
+                rx.cond(
+                    live,
+                    rx.avatar_badge(
+                        box_size=Size.MEDIUM.value,
+                        bg=Color.PURPLE.value,
+                        border_color=Color.PURPLE.value
+                    )
+                ),
                 name="Brais Moure",
                 size="xl",
                 src="/avatar.jpg",
