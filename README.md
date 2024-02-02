@@ -12,13 +12,14 @@
 
 ## ⚠️ [NUEVO] Curso de Python Web Avanzado
 
-### 🗓️ Próxima clase: 01/02/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/mouredev?event=1200405460059172864)
+### 🗓️ Próxima clase: 08/02/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/ZGuugkkk?event=1202929768996012072)
 
 ### Clases anteriores:
 
 - [Clase 1 [18/01/24]: Actualización, refactor, Router, componentes React y hosting Reflex](https://www.twitch.tv/videos/2036419660?t=00h14m41s)
 - [Clase 2 [25/01/24]: Backend, Docker, CORS y GitHub Actions](https://www.twitch.tv/videos/2043357705?t=00h17m22s)
+- [Clase 3 [01/02/24]: Estados, API REST e integración API Twitch](https://www.twitch.tv/videos/2050175668?t=00h16m05s)
 
 Continuación del curso desde cero de 6 horas. En esta sección más avanzada se aprenderán diferentes conceptos relacionados con el desarrollo web con Python y Reflex: Router, backend, APIs, eventos, estados, base de datos, Docker, y más...
 
@@ -89,6 +90,8 @@ Todo el contenido se crea en directo desde [Twitch](https://www.twitch.tv/moured
 * [Vercel](https://vercel.com/)
 * [Radix UI](https://www.radix-ui.com/)
 * [Ant Design](https://ant.design/)
+* [Railway](https://railway.app/)
+* [Twitch API](https://dev.twitch.tv/docs/api/)
 
 ## Curso de Python desde cero
 ### Aprende Python desde sus fundamentos

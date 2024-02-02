@@ -20,7 +20,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Run build script
         run: |
@@ -33,4 +33,4 @@ jobs:
           commit_message: Update static build
           commit_user_name: Brais Moure [GitHub Actions]
           commit_user_email: mouredev@gmail.com
-          commit_author: mouredev <mouredev@gmail.com>
+          commit_author: Brais Moure <mouredev@gmail.com>
