@@ -5,3 +5,8 @@
 .blink {
     animation: blinker 1.5s linear infinite;
 }
+
+/* Eliminar en futuras versiones de Reflex */
+:root, .light, .light-theme {
+    --color-page-background: #0C151D !important;
+}
