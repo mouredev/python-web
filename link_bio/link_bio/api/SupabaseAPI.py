@@ -13,10 +13,16 @@ class SupabaseAPI:
     supabase: Client
 
     def __init__(self) -> None:
-        if self.SUPABASE_URL != "" and self.SUPABASE_KEY != "":
+        self.supabase = None
+
+    def create_client(self):
+        if self.supabase is None:
             self.supabase = create_client(self.SUPABASE_URL, self.SUPABASE_KEY)
 
     def featured(self) -> list:
+
+        if self.supabase is None:
+            self.create_client()
 
         response = self.supabase.table("featured").select("*").execute()
 
