@@ -13,7 +13,8 @@ class SupabaseAPI:
     supabase: Client
 
     def __init__(self) -> None:
-        self.supabase = create_client(self.SUPABASE_URL, self.SUPABASE_KEY)
+        if self.SUPABASE_URL != "" and self.SUPABASE_KEY != "":
+            self.supabase = create_client(self.SUPABASE_URL, self.SUPABASE_KEY)
 
     def featured(self) -> list:
 
