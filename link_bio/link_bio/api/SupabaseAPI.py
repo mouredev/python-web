@@ -10,7 +10,10 @@ class SupabaseAPI:
     SUPABASE_URL = os.environ.get("SUPABASE_URL")
     SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 
-    supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+    supabase: Client
+
+    def __init__(self) -> None:
+        self.supabase = create_client(self.SUPABASE_URL, self.SUPABASE_KEY)
 
     def featured(self) -> list:
 
