@@ -2,7 +2,7 @@ import reflex as rx
 import link_bio.constants as const
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
-from link_bio.styles.styles import Size
+from link_bio.styles.styles import Size, Color
 
 
 def courses_links() -> rx.Component:
@@ -10,10 +10,10 @@ def courses_links() -> rx.Component:
         title("Cursos gratis"),
         link_button(
             "Retos de programación",
-            "Ruta de estudio semanal para practicar lógica de programación",
+            "Ruta de estudio semanal para practicar lógica",
             "/icons/challenges.png",
             const.CODE_CHALLENGES_URL,
-            highlight=True
+            highlight_color=Color.SECONDARY.value
         ),
         link_button(
             "Python desde cero",
