@@ -1,5 +1,5 @@
 import reflex as rx
-from link_bio.api.api import live, featured
+from link_bio.api.api import live
 
 USER = "mouredev"
 
@@ -15,5 +15,5 @@ class PageState(rx.State):
         self.is_live = live_data["live"]
         self.live_title = live_data["title"]
 
-    async def featured_links(self):
-        self.featured_info = await featured()
+    # async def featured_links(self):
+    #     self.featured_info = await featured()
