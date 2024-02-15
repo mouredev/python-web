@@ -1,3 +1,4 @@
 reflex==0.3.10
 python-dotenv
 supabase
+configcat-client

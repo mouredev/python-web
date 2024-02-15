@@ -1,6 +1,7 @@
 import os
 import dotenv
 from supabase import create_client, Client
+from link_bio.model.Featured import Featured
 
 
 class SupabaseAPI:
@@ -16,7 +17,7 @@ class SupabaseAPI:
                 self.SUPABASE_URL, self.SUPABASE_KEY
             )
 
-    def featured(self) -> list:
+    def featured(self) -> list[Featured]:
 
         response = self.supabase.table("featured").select("*").execute()
 
@@ -24,6 +25,12 @@ class SupabaseAPI:
 
         if len(response.data) > 0:
             for featured_item in response.data:
-                featured_data.append(featured_item)
+                featured_data.append(
+                    Featured(
+                        title=featured_item["title"],
+                        image=featured_item["image"],
+                        url=featured_item["url"]
+                    )
+                )
 
         return featured_data

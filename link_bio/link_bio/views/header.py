@@ -1,6 +1,7 @@
 import reflex as rx
 import datetime
 import link_bio.constants as const
+from link_bio.model.Live import Live
 from link_bio.styles.styles import Size
 from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon
@@ -8,12 +9,12 @@ from link_bio.components.info_text import info_text
 from link_bio.components.link_button import link_button
 
 
-def header(details=True, live=False, live_title="") -> rx.Component:
+def header(details=True, live_status=Live(live=False, title="")) -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.avatar(
                 rx.cond(
-                    live,
+                    live_status.live,
                     rx.link(
                         rx.avatar_badge(
                             rx.image(
@@ -102,10 +103,10 @@ def header(details=True, live=False, live_title="") -> rx.Component:
                     width="100%"
                 ),
                 rx.cond(
-                    live,
+                    live_status.live,
                     link_button(
                         "En directo",
-                        live_title,
+                        live_status.title,
                         "/icons/twitch.svg",
                         const.TWITCH_URL,
                         highlight_color=Color.PURPLE.value

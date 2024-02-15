@@ -1,12 +1,14 @@
 import reflex as rx
 import link_bio.constants as const
+from link_bio.components.featured_link import featured_link
+from link_bio.model.Featured import Featured
 from link_bio.routes import Route
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
 from link_bio.styles.styles import Size, Color
 
 
-def index_links(featured=[]) -> rx.Component:
+def index_links(featured: list[Featured]) -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
         link_button(
@@ -42,28 +44,21 @@ def index_links(featured=[]) -> rx.Component:
             const.YOUTUBE_SECONDARY_URL
         ),
 
-        # rx.cond(
-        #     len(featured) > 0,
-        #     rx.vstack(
-        #         title("Destacado"),
-        #         rx.foreach(
-        #             featured,
-        #             lambda item: rx.responsive_grid(
-        #                 rx.text(item)
-        # rx.link(
-        #     rx.image(
-        #         src=item["image"]
-        #     ),
-        #     rx.text(
-        #         item["title"]
-        #     ),
-        #     href=item["url"],
-        #     is_external=True
-        # )
-        #             )
-        #         )
-        #     )
-        # ),
+        rx.cond(
+            featured,
+            rx.vstack(
+                title("Destacado"),
+                rx.responsive_grid(
+                    rx.foreach(
+                        featured,
+                        featured_link
+                    ),
+                    columns=[1, 2],
+                    spacing=Size.DEFAULT.value
+                ),
+                spacing=Size.DEFAULT.value
+            )
+        ),
 
         title("Recursos y más"),
         link_button(
