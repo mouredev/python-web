@@ -18,7 +18,9 @@ def header(details=True, live_status=Live(live=False, title="")) -> rx.Component
                     rx.link(
                         rx.avatar_badge(
                             rx.image(
-                                src="/icons/twitch.svg"
+                                src="/icons/twitch.svg",
+                                height=Size.SMALL.value,
+                                width=Size.SMALL.value
                             ),
                             bg=Color.PURPLE.value,
                             border_color=Color.PURPLE.value,
