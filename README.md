@@ -27,6 +27,12 @@ Continuación del curso desde cero de 6 horas. En esta sección más avanzada se
 
 *Una vez se finalice el curso se creará un vídeo en YouTube, al igual que con la primera parte. Mientras tanto, los vídeos se guardan en Twitch durante 2 meses.*
 
+## Sobre el curso: muy importante
+
+Desde la versión 0.4.0, Reflex utiliza [Radix](https://www.radix-ui.com/) (en vez de [Chakra](https://chakra-ui.com/)) como sistema de componentes de UI. Ten en cuenta la versión que usas del framework, ya que algunos elementos han podido cambiar ligeramente. Te recomiendo que revises el [código](./link_bio) del proyecto original actualizado.
+
+Aquí tienes [un artículo](https://reflex.dev/blog/2024-02-16-reflex-v0.4.0) con toda la información sobre la nueva versión.
+
 ## Curso de Python Web: Tutorial en vídeo
 
 <a href="https://youtu.be/n2YrGsXJC6Y"><img src="http://i3.ytimg.com/vi/n2YrGsXJC6Y/maxresdefault.jpg" style="height: 50%; width:50%;"/></a>
