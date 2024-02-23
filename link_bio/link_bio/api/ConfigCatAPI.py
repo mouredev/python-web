@@ -16,10 +16,6 @@ class ConfigCatAPI:
 
     def schedule(self) -> dict:
         response = self.configcat.get_value("live_schedule", "")
+        print(response)
         # response_json = json.loads(str(response))
-
-        # schedule = dict()
-        # for data in json:
-        #     schedule[f"{data.ke}"]
-
-        return {"0": "19:00"}
+        return dict()
