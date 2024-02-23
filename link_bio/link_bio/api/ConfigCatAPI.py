@@ -1,7 +1,7 @@
 import os
 import dotenv
 import configcatclient
-import json
+# import json
 
 
 class ConfigCatAPI:
@@ -16,4 +16,10 @@ class ConfigCatAPI:
 
     def schedule(self) -> dict:
         response = self.configcat.get_value("live_schedule", "")
-        return json.loads(str(response))
+        # response_json = json.loads(str(response))
+
+        # schedule = dict()
+        # for data in json:
+        #     schedule[f"{data.ke}"]
+
+        return {"0": "19:00"}
