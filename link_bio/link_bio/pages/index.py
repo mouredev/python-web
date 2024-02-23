@@ -15,7 +15,7 @@ from link_bio.state.PageState import PageState
     description=utils.index_description,
     image=utils.preview,
     meta=utils.index_meta,
-    on_load=[PageState.check_live, PageState.featured_links]
+    on_load=[PageState.featured_links]
 )
 def index() -> rx.Component:
     return rx.box(
