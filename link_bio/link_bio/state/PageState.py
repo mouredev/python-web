@@ -14,10 +14,14 @@ class PageState(rx.State):
     next_live: str = ""
     featured_info: list[Featured]
 
+    @rx.background
     async def check_live(self):
-        self.live_status = await live(USER)
-        if not self.live_status.live:
-            self.next_live = utils.next_date(await schedule())
+        async with self:
+            self.live_status = await live(USER)
+            if not self.live_status.live:
+                self.next_live = utils.next_date(await schedule())
 
+    @rx.background
     async def featured_links(self):
-        self.featured_info = await featured()
+        async with self:
+            self.featured_info = await featured()
