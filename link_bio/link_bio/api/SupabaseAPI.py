@@ -19,7 +19,8 @@ class SupabaseAPI:
 
     def featured(self) -> list[Featured]:
 
-        response = self.supabase.table("featured").select("*").execute()
+        response = self.supabase.table(
+            "featured").select("*").order("init_date", desc=True).limit(2).execute()
 
         featured_data = []
 

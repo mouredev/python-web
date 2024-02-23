@@ -1,48 +1,54 @@
+from turtle import position
 import reflex as rx
 import datetime
 import link_bio.constants as const
 from link_bio.model.Live import Live
-from link_bio.styles.styles import Size
+from link_bio.styles.styles import Size, Spacing
 from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon
 from link_bio.components.info_text import info_text
 from link_bio.components.link_button import link_button
 
 
-def header(details=True, live_status=Live(live=False, title="")) -> rx.Component:
+def header(details=True, live_status=Live(live=False, title=""), next_live="") -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(
+            rx.box(
                 rx.cond(
                     live_status.live,
                     rx.link(
-                        rx.avatar_badge(
-                            rx.image(
-                                src="/icons/twitch.svg",
-                                height=Size.SMALL.value,
-                                width=Size.SMALL.value
-                            ),
-                            bg=Color.PURPLE.value,
-                            border_color=Color.PURPLE.value,
-                            class_name="blink"
+                        rx.image(
+                            src="/icons/twitch.svg",
+                            height=Size.LARGE.value,
+                            width=Size.LARGE.value
                         ),
                         href=const.TWITCH_URL,
-                        is_external=True
+                        is_external=True,
+                        class_name="blink",
+                        border_radius="50%",
+                        padding=Size.SMALL.value,
+                        bg=Color.PURPLE.value,
+                        position="absolute",
+                        bottom="0",
+                        right="0"
                     )
                 ),
-                name="Brais Moure",
-                size="xl",
-                src="/avatar.jpg",
-                color=TextColor.BODY.value,
-                bg=Color.CONTENT.value,
-                padding="2px",
-                border="4px",
-                border_color=Color.PRIMARY.value
+                rx.avatar(
+                    name="Brais Moure",
+                    size=Spacing.MEDIUM_BIG.value,
+                    src="/avatar.jpg",
+                    radius="full",
+                    color=TextColor.BODY.value,
+                    bg=Color.CONTENT.value,
+                    padding="2px",
+                    border=f"4px solid {Color.PRIMARY.value}"
+                ),
+                position="relative"
             ),
             rx.vstack(
                 rx.heading(
                     "Brais Moure",
-                    size="lg"
+                    size=Spacing.BIG.value
                 ),
                 rx.text(
                     "@mouredev",
@@ -80,11 +86,14 @@ def header(details=True, live_status=Live(live=False, title="")) -> rx.Component
                         const.LINKEDIN_URL,
                         "LinkedIn"
                     ),
-                    spacing=Size.LARGE.value
+                    spacing=Spacing.LARGE.value,
+                    padding_top=Size.SMALL.value
                 ),
+                spacing=Spacing.ZERO.value,
                 align_items="start"
             ),
-            spacing=Size.DEFAULT.value
+            align="end",
+            spacing=Spacing.DEFAULT.value
         ),
         rx.cond(
             details,
@@ -112,6 +121,16 @@ def header(details=True, live_status=Live(live=False, title="")) -> rx.Component
                         "/icons/twitch.svg",
                         const.TWITCH_URL,
                         highlight_color=Color.PURPLE.value
+                    ),
+                    rx.cond(
+                        next_live,
+                        link_button(
+                            "Próximo directo",
+                            next_live,
+                            "/icons/twitch.svg",
+                            const.TWITCH_URL,
+                            highlight_color=Color.PURPLE.value
+                        ),
                     )
                 ),
                 rx.text(
@@ -125,12 +144,12 @@ def header(details=True, live_status=Live(live=False, title="")) -> rx.Component
                     color=TextColor.BODY.value
                 ),
                 width="100%",
-                spacing=Size.BIG.value
+                spacing=Spacing.BIG.value
             )
         ),
         width="100%",
-        spacing=Size.BIG.value,
-        align_items="start"
+        spacing=Spacing.BIG.value,
+        align_items="start",
     )
 
 

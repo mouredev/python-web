@@ -1,3 +1,4 @@
+from datetime import date, datetime, timedelta, timezone
 import reflex as rx
 
 # Común
@@ -37,3 +38,41 @@ courses_meta = [
     {"name": "og:description", "content": courses_description},
 ]
 courses_meta.extend(_meta)
+
+# Date
+
+
+def next_date(dates: dict) -> str:
+
+    if len(dates) == 0:
+        return ""
+
+    now = datetime.now()
+    current_weekday = now.weekday()
+    current_time = now.astimezone().timetz()
+
+    for index in range(7):
+
+        day = str((current_weekday + index) % 7)
+
+        if day not in dates or dates[day] == "":
+            continue
+
+        time_utc = datetime.strptime(
+            dates[day],
+            "%H:%M"
+        ).replace(tzinfo=timezone.utc).timetz()
+
+        time = datetime.combine(now.date(), time_utc).astimezone().timetz()
+
+        if current_time < time or index > 0:
+
+            next_date = now + timedelta(days=index)
+
+            formatted_next_date = next_date.strftime(
+                "Hoy, %d/%m") if index == 0 else next_date.strftime("%A, %d/%m")
+            formatted_next_time = time.strftime("%H:%M")
+
+            return f"{formatted_next_date} a las {formatted_next_time} ({dates[day]} UTC)"
+
+    return ""

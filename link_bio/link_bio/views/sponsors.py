@@ -1,6 +1,6 @@
 import reflex as rx
 import link_bio.constants as const
-from link_bio.styles.styles import Size
+from link_bio.styles.styles import Size, Spacing
 from link_bio.components.title import title
 from link_bio.components.link_sponsor import link_sponsor
 
@@ -8,7 +8,7 @@ from link_bio.components.link_sponsor import link_sponsor
 def sponsors() -> rx.Component:
     return rx.vstack(
         title("Colaboran"),
-        rx.responsive_grid(
+        rx.flex(
             link_sponsor(
                 "/elgato.png",
                 const.ELGATO_URL,
@@ -24,10 +24,10 @@ def sponsors() -> rx.Component:
                 const.GITHUB_STAR_URL,
                 "Logotipo de GitHub Star"
             ),
-            spacing=Size.BIG.value,
-            columns=[1, 3]
+            spacing=Spacing.BIG.value,
+            flex_direction=["column", "row"]
         ),
         width="100%",
         align_items="start",
-        spacing=Size.MEDIUM.value
+        spacing=Spacing.DEFAULT.value
     )

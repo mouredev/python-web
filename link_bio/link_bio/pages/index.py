@@ -23,7 +23,10 @@ def index() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                header(live_status=PageState.live_status),
+                header(
+                    live_status=PageState.live_status,
+                    next_live=PageState.next_live
+                ),
                 index_links(PageState.featured_info),
                 sponsors(),
                 max_width=styles.MAX_WIDTH,

@@ -1,4 +1,4 @@
-reflex==0.3.10
+reflex==0.4.1
 python-dotenv
 supabase
 configcat-client

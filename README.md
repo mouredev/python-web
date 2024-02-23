@@ -1,7 +1,7 @@
 # Python Web
 
 [![Python](https://img.shields.io/badge/Python-3.11+-yellow?style=for-the-badge&logo=python&logoColor=white&labelColor=101010)](https://python.org)
-[![Reflex](https://img.shields.io/badge/Reflex-0.3.10+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
+[![Reflex](https://img.shields.io/badge/Reflex-0.4.1+-5646ED?style=for-the-badge&logo=reflex&logoColor=white&labelColor=101010)](https://reflex.dev)
 
 ## Curso de 6 horas en vídeo para aprender desarrollo web frontend con Python puro y Reflex desde cero.
 
@@ -12,8 +12,8 @@
 
 ## ⚠️ [NUEVO] Curso de Python Web Avanzado
 
-### 🗓️ Próxima clase: 22/02/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
-[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/mouredev?event=1208033343644368917)
+### 🗓️ Próxima clase: 07/03/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
+[**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/mouredev?event=1210569183126093855)
 
 ### Clases anteriores:
 
@@ -22,6 +22,7 @@
 - [Clase 3 [01/02/24]: Estados, API REST e integración API Twitch](https://www.twitch.tv/videos/2050175668?t=00h16m05s)
 - [Clase 4 [08/02/24]: Integración Supabase PostgreSQL](https://www.twitch.tv/videos/2057000877?t=00h16m10s)
 - [Clase 5 [16/02/24]: Variables custom](https://www.twitch.tv/videos/2063647841?t=00h12m08s)
+- [Clase 6 [23/02/24]: Feature flags y migración a Radix UI](https://www.twitch.tv/videos/2070550680?t=00h17m52s)
 
 Continuación del curso desde cero de 6 horas. En esta sección más avanzada se aprenderán diferentes conceptos relacionados con el desarrollo web con Python y Reflex: Router, backend, APIs, eventos, estados, base de datos, Docker, y más...
 

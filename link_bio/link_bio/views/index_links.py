@@ -5,7 +5,7 @@ from link_bio.model.Featured import Featured
 from link_bio.routes import Route
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
-from link_bio.styles.styles import Size, Color
+from link_bio.styles.styles import Size, Color, Spacing
 
 
 def index_links(featured: list[Featured]) -> rx.Component:
@@ -48,15 +48,15 @@ def index_links(featured: list[Featured]) -> rx.Component:
             featured,
             rx.vstack(
                 title("Destacado"),
-                rx.responsive_grid(
+                rx.flex(
                     rx.foreach(
                         featured,
                         featured_link
                     ),
-                    columns=[1, 2],
-                    spacing=Size.DEFAULT.value
+                    flex_direction=["column", "row"],
+                    spacing=Spacing.DEFAULT.value
                 ),
-                spacing=Size.DEFAULT.value
+                spacing=Spacing.DEFAULT.value
             )
         ),
 
@@ -106,5 +106,5 @@ def index_links(featured: list[Featured]) -> rx.Component:
             f"mailto:{const.EMAIL}"
         ),
         width="100%",
-        spacing=Size.DEFAULT.value,
+        spacing=Spacing.DEFAULT.value,
     )
