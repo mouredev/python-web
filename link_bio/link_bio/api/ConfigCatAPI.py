@@ -16,7 +16,8 @@ class ConfigCatAPI:
 
     def schedule(self) -> dict:
         response = self.configcat.get_value("live_schedule", "")
-        value = str(response)
-        if value != "":
-            return json.loads(value)
+        print(response)
+
+        # if value != "":
+        #     return json.loads(value)
         return dict()
