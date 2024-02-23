@@ -8,19 +8,20 @@ from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon
 from link_bio.components.info_text import info_text
 from link_bio.components.link_button import link_button
+from link_bio.state.PageState import PageState
 
 
-def header(details=True, live_status=Live(live=False, title=""), next_live="") -> rx.Component:
+def header(details=True) -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.box(
                 rx.cond(
-                    live_status.live,
+                    PageState.live_status.live,
                     rx.link(
                         rx.image(
                             src="/icons/twitch.svg",
-                            height=Size.LARGE.value,
-                            width=Size.LARGE.value
+                            height=Size.DEFAULT.value,
+                            width=Size.DEFAULT.value
                         ),
                         href=const.TWITCH_URL,
                         is_external=True,
@@ -114,19 +115,19 @@ def header(details=True, live_status=Live(live=False, title=""), next_live="") -
                     width="100%"
                 ),
                 rx.cond(
-                    live_status.live,
+                    PageState.live_status.live,
                     link_button(
                         "En directo",
-                        live_status.title,
+                        PageState.live_status.title,
                         "/icons/twitch.svg",
                         const.TWITCH_URL,
                         highlight_color=Color.PURPLE.value
                     ),
                     rx.cond(
-                        next_live,
+                        PageState.next_live,
                         link_button(
                             "Próximo directo",
-                            next_live,
+                            PageState.next_live,
                             "/icons/twitch.svg",
                             const.TWITCH_URL,
                             highlight_color=Color.PURPLE.value
@@ -150,6 +151,7 @@ def header(details=True, live_status=Live(live=False, title=""), next_live="") -
         width="100%",
         spacing=Spacing.BIG.value,
         align_items="start",
+        on_mount=PageState.check_live
     )
 
 

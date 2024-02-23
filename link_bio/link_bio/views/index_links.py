@@ -5,10 +5,11 @@ from link_bio.model.Featured import Featured
 from link_bio.routes import Route
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
-from link_bio.styles.styles import Size, Color, Spacing
+from link_bio.styles.styles import Color, Spacing
+from link_bio.state.PageState import PageState
 
 
-def index_links(featured: list[Featured]) -> rx.Component:
+def index_links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
         link_button(
@@ -45,12 +46,12 @@ def index_links(featured: list[Featured]) -> rx.Component:
         ),
 
         rx.cond(
-            featured,
+            PageState.featured_info,
             rx.vstack(
                 title("Destacado"),
                 rx.flex(
                     rx.foreach(
-                        featured,
+                        PageState.featured_info,
                         featured_link
                     ),
                     flex_direction=["column", "row"],
@@ -107,4 +108,5 @@ def index_links(featured: list[Featured]) -> rx.Component:
         ),
         width="100%",
         spacing=Spacing.DEFAULT.value,
+        on_mount=PageState.featured_links
     )

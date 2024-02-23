@@ -7,15 +7,13 @@ from link_bio.views.header import header
 from link_bio.views.index_links import index_links
 from link_bio.views.sponsors import sponsors
 from link_bio.styles.styles import Size
-from link_bio.state.PageState import PageState
 
 
 @rx.page(
     title=utils.index_title,
     description=utils.index_description,
     image=utils.preview,
-    meta=utils.index_meta,
-    # on_load=[PageState.featured_links]
+    meta=utils.index_meta
 )
 def index() -> rx.Component:
     return rx.box(
@@ -23,13 +21,8 @@ def index() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                header(
-                    live_status=PageState.live_status,
-                    next_live=PageState.next_live
-                ),
-                rx.button("Prueba", on_mount=PageState.check_live),
-                rx.button("Prueba2", on_mount=PageState.featured_links),
-                index_links(PageState.featured_info),
+                header(),
+                index_links(),
                 sponsors(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",

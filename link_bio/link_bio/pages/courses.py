@@ -16,8 +16,7 @@ from link_bio.state.PageState import PageState
     title=utils.courses_title,
     description=utils.courses_description,
     image=utils.preview,
-    meta=utils.courses_meta,
-    on_load=PageState.check_live
+    meta=utils.courses_meta
 )
 def courses() -> rx.Component:
     return rx.box(
@@ -25,10 +24,7 @@ def courses() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                header(
-                    False,
-                    live_status=PageState.live_status
-                ),
+                header(False),
                 courses_links(),
                 sponsors(),
                 max_width=styles.MAX_WIDTH,
