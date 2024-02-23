@@ -11,7 +11,7 @@
 > ##### Si consideras útil el curso, apóyalo haciendo "★ Star" en el repositorio. ¡Gracias!
 
 ## ⚠️ [NUEVO] Curso de Python Web Avanzado
-
+ 
 ### 🗓️ Próxima clase (final): 07/03/24 a las 20h (España) en directo desde [Twitch](https://twitch.tv/mouredev)
 [**Consulta aquí el horario en tu país y crea un recordatorio**](https://discord.gg/mouredev?event=1210569183126093855)
 
