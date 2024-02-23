@@ -1,21 +1,19 @@
-# import os
-# import dotenv
-# import configcatclient
-# # import json
+import os
+import dotenv
+import configcatclient
+import json
 
 
-# class ConfigCatAPI:
+class ConfigCatAPI:
 
-#     dotenv.load_dotenv()
+    dotenv.load_dotenv()
 
-#     CONFIGCAT_SDK_KEY = os.environ.get("CONFIGCAT_SDK_KEY")
+    CONFIGCAT_SDK_KEY = os.environ.get("CONFIGCAT_SDK_KEY")
 
-#     def __init__(self) -> None:
-#         if self.CONFIGCAT_SDK_KEY != None:
-#             self.configcat = configcatclient.get(self.CONFIGCAT_SDK_KEY)
+    def __init__(self) -> None:
+        if self.CONFIGCAT_SDK_KEY != None:
+            self.configcat = configcatclient.get(self.CONFIGCAT_SDK_KEY)
 
-# def schedule(self) -> dict:
-#     response = self.configcat.get_value("live_schedule", "")
-#     print(response)
-#     # response_json = json.loads(str(response))
-#     return dict()
+    def schedule(self) -> dict:
+        response = self.configcat.get_value("live_schedule", "")
+        return json.loads(str(response))
