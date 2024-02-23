@@ -22,5 +22,5 @@ async def featured() -> list[Featured]:
     return SUPABASE_API.featured()
 
 
-async def schedule() -> str:
+async def schedule() -> dict:
     return CONFIGCAT_API.schedule()
