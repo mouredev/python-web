@@ -27,8 +27,8 @@ def index() -> rx.Component:
                     live_status=PageState.live_status,
                     next_live=PageState.next_live
                 ),
-                rx.button("Prueba", on_click=PageState.check_live),
-                rx.button("Prueba2", on_click=PageState.featured_links),
+                rx.button("Prueba", on_mount=PageState.check_live),
+                rx.button("Prueba2", on_mount=PageState.featured_links),
                 index_links(PageState.featured_info),
                 sponsors(),
                 max_width=styles.MAX_WIDTH,
