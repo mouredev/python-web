@@ -1,7 +1,7 @@
 import os
 import dotenv
 import configcatclient
-# import json
+import json
 
 
 class ConfigCatAPI:
@@ -14,7 +14,9 @@ class ConfigCatAPI:
         if self.CONFIGCAT_SDK_KEY != None:
             self.configcat = configcatclient.get(self.CONFIGCAT_SDK_KEY)
 
-    def schedule(self) -> str:
-        response = self.configcat.get_value("live_schedule", "")
-        # return json.loads(str(response))
-        return str(response)
+    def schedule(self) -> dict:
+        try:
+            response = self.configcat.get_value("live_schedule", "")
+            return json.loads(str(response))
+        except Exception as e:
+            return {"Error": f"{e}"}
