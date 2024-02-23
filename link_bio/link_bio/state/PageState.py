@@ -16,8 +16,8 @@ class PageState(rx.State):
 
     async def check_live(self):
         self.live_status = await live(USER)
-        # if not self.live_status.live:
-        #     self.next_live = utils.next_date(await schedule())
+        if not self.live_status.live:
+            self.next_live = utils.next_date(await schedule())
 
     async def featured_links(self):
         self.featured_info = await featured()
