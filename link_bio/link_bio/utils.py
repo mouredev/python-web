@@ -73,6 +73,6 @@ def next_date(dates: dict) -> str:
                 "Hoy, %d/%m") if index == 0 else next_date.strftime("%A, %d/%m")
             formatted_next_time = time.strftime("%H:%M")
 
-            return f"{formatted_next_date} a las {formatted_next_time} ({dates[day]} UTC)"
+            return f"{formatted_next_date} a las {formatted_next_time}"
 
     return ""
