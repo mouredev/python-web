@@ -1,7 +1,6 @@
 import reflex as rx
 import datetime
 import link_bio.constants as const
-import link_bio.utils as utils
 from link_bio.styles.styles import Size, Spacing
 from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon
@@ -122,15 +121,19 @@ def header(details=True) -> rx.Component:
                         const.TWITCH_URL,
                         highlight_color=Color.PURPLE.value
                     ),
-                    rx.cond(
-                        PageState.next_live,
-                        link_button(
-                            "Próximo directo",
+                    rx.box(
+                        rx.cond(
                             PageState.next_live,
-                            "/icons/twitch.svg",
-                            const.TWITCH_URL,
-                            highlight_color=Color.PURPLE.value
+                            link_button(
+                                "Próximo directo",
+                                PageState.next_live,
+                                "/icons/twitch.svg",
+                                const.TWITCH_URL,
+                                highlight_color=Color.PURPLE.value
+                            ),
                         ),
+                        width="100%",
+                        on_mount=PageState.check_schedule
                     )
                 ),
                 rx.text(
@@ -150,7 +153,7 @@ def header(details=True) -> rx.Component:
         width="100%",
         spacing=Spacing.BIG.value,
         align_items="start",
-        on_mount=PageState.check_live(utils.local_timezone())
+        on_mount=PageState.check_live
     )
 
 

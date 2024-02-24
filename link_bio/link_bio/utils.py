@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta, timezone
 import pytz
-import locale
 import reflex as rx
 
 # Común
@@ -43,21 +42,10 @@ courses_meta.extend(_meta)
 
 # Date
 
-
-def local_timezone() -> str:
-    return datetime.now().astimezone().tzname()
+LOCAL_TIMEZONE_SCRIPT = "Intl.DateTimeFormat().resolvedOptions().timeZone"
 
 
 def next_date(dates: dict, timezone: str) -> str:
-
-    # Se intenta forzar el locale para traducir el formateo de fecha a español
-    try:
-        locale.setlocale(locale.LC_TIME, "es_ES")
-    except:
-        try:
-            locale.setlocale(locale.LC_TIME, "es_ES.utf8")
-        except:
-            pass
 
     if len(dates) == 0:
         return ""
@@ -87,6 +75,18 @@ def next_date(dates: dict, timezone: str) -> str:
                 next_date.year, next_date.month, next_date.day,
                 time_utc.hour, time_utc.minute, tzinfo=pytz.UTC).astimezone(tz)
 
-            return local_date.strftime("%A, %d de %B a las %H:%M").capitalize() + f" ({timezone} {tz} {locale.getlocale()})"
+            weekdays = {
+                0: "Lunes",
+                1: "Martes",
+                2: "Miércoles",
+                3: "Jueves",
+                4: "Viernes",
+                5: "Sábado",
+                6: "Domingo",
+            }
+
+            day = "Hoy" if weekday == 0 else weekdays[local_date.weekday()]
+
+            return local_date.strftime(f"{day.capitalize()}, %d/%m a las %H:%M") + f" ({timezone} {tz})"
 
     return ""
