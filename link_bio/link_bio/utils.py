@@ -44,6 +44,31 @@ courses_meta.extend(_meta)
 
 LOCAL_TIMEZONE_SCRIPT = "Intl.DateTimeFormat().resolvedOptions().timeZone"
 
+WEEKDAYS = {
+    0: "Lunes",
+    1: "Martes",
+    2: "Miércoles",
+    3: "Jueves",
+    4: "Viernes",
+    5: "Sábado",
+    6: "Domingo"
+}
+
+MONTHS = {
+    1: "Enero",
+    2: "Febrero",
+    3: "Marzo",
+    4: "Abril",
+    5: "Mayo",
+    6: "Junio",
+    7: "Julio",
+    8: "Agosto",
+    9: "Septiembre",
+    10: "Octubre",
+    11: "Noviembre",
+    12: "Diciembre"
+}
+
 
 def next_date(dates: dict, timezone: str) -> str:
 
@@ -75,18 +100,10 @@ def next_date(dates: dict, timezone: str) -> str:
                 next_date.year, next_date.month, next_date.day,
                 time_utc.hour, time_utc.minute, tzinfo=pytz.UTC).astimezone(tz)
 
-            weekdays = {
-                0: "Lunes",
-                1: "Martes",
-                2: "Miércoles",
-                3: "Jueves",
-                4: "Viernes",
-                5: "Sábado",
-                6: "Domingo",
-            }
+            day = "Hoy" if weekday == 0 else WEEKDAYS[local_date.weekday()]
+            zones = timezone.replace('_', ' ').split('/')
 
-            day = "Hoy" if weekday == 0 else weekdays[local_date.weekday()]
-
-            return local_date.strftime(f"{day.capitalize()}, %d/%m a las %H:%M") + f" ({timezone})"
+            return local_date.strftime(
+                f"{day}, %d de {MONTHS[local_date.month]} a las %H:%M | {zones[len(zones) - 1]}")
 
     return ""

@@ -119,7 +119,8 @@ def header(details=True) -> rx.Component:
                         PageState.live_status.title,
                         "/icons/twitch.svg",
                         const.TWITCH_URL,
-                        highlight_color=Color.PURPLE.value
+                        highlight_color=Color.PURPLE.value,
+                        animated=True
                     ),
                     rx.box(
                         rx.cond(
@@ -129,8 +130,9 @@ def header(details=True) -> rx.Component:
                                 PageState.next_live,
                                 "/icons/twitch.svg",
                                 const.TWITCH_URL,
-                                highlight_color=Color.PURPLE.value
-                            )
+                                highlight_color=Color.PURPLE.value,
+                                animated=True
+                            ),
                         ),
                         width="100%",
                         on_mount=PageState.check_schedule
@@ -138,11 +140,11 @@ def header(details=True) -> rx.Component:
                 ),
                 rx.text(
                     f"""
-            Soy ingeniero de software y actualmente trabajo como freelance
-            full-stack developer iOS y Android.
-            Además, creo contenido formativo sobre programación en redes.
-            Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
-            """,
+                    Soy ingeniero de software y actualmente trabajo como freelance
+                    full-stack developer iOS y Android.
+                    Además, creo contenido formativo sobre programación en redes.
+                    Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
+                    """,
                     font_size=Size.DEFAULT.value,
                     color=TextColor.BODY.value
                 ),
