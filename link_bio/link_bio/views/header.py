@@ -1,8 +1,7 @@
-from turtle import position
 import reflex as rx
 import datetime
 import link_bio.constants as const
-from link_bio.model.Live import Live
+import link_bio.utils as utils
 from link_bio.styles.styles import Size, Spacing
 from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon
@@ -151,7 +150,7 @@ def header(details=True) -> rx.Component:
         width="100%",
         spacing=Spacing.BIG.value,
         align_items="start",
-        on_mount=PageState.check_live
+        on_mount=PageState.check_live(utils.local_timezone())
     )
 
 

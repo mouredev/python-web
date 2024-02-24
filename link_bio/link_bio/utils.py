@@ -44,16 +44,27 @@ courses_meta.extend(_meta)
 # Date
 
 
-def next_date(dates: dict) -> str:
+def local_timezone() -> str:
+    return datetime.now().astimezone().tzname()
 
-    # Se fuerza el locale para traducir el formateo de fecha a español
-    # locale.setlocale(locale.LC_TIME, "es_ES")
+
+def next_date(dates: dict, timezone: str) -> str:
+
+    # Se intenta forzar el locale para traducir el formateo de fecha a español
+    try:
+        locale.setlocale(locale.LC_TIME, "es_ES")
+    except:
+        try:
+            locale.setlocale(locale.LC_TIME, "es_ES.utf8")
+        except:
+            pass
 
     if len(dates) == 0:
         return ""
 
-    now = datetime.now()
-    current_time = now.astimezone().timetz()
+    tz = pytz.timezone(timezone)
+    now = datetime.now(tz)
+    current_time = now.timetz()
 
     for weekday in range(7):
 
@@ -66,7 +77,7 @@ def next_date(dates: dict) -> str:
             tzinfo=pytz.UTC).timetz()
 
         next_time = datetime.combine(
-            now.date(), time_utc).astimezone().timetz()
+            now.date(), time_utc).astimezone(tz).timetz()
 
         if current_time < next_time or weekday > 0:
 
@@ -74,7 +85,7 @@ def next_date(dates: dict) -> str:
 
             local_date = datetime(
                 next_date.year, next_date.month, next_date.day,
-                time_utc.hour, time_utc.minute, tzinfo=pytz.UTC).astimezone()
+                time_utc.hour, time_utc.minute, tzinfo=pytz.UTC).astimezone(tz)
 
             return local_date.strftime("%A, %d de %B a las %H:%M").capitalize()
 

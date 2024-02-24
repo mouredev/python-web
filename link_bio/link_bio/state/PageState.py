@@ -10,13 +10,13 @@ USER = "mouredev"
 class PageState(rx.State):
 
     live_status = Live(live=False, title="")
-    next_live: str = ""
+    next_live = ""
     featured_info: list[Featured]
 
-    async def check_live(self):
+    async def check_live(self, timezone: str):
         self.live_status = await live(USER)
         if not self.live_status.live:
-            self.next_live = utils.next_date(await schedule())
+            self.next_live = utils.next_date(await schedule(), timezone)
 
     async def featured_links(self):
         self.featured_info = await featured()
