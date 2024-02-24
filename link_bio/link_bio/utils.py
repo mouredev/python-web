@@ -87,6 +87,6 @@ def next_date(dates: dict, timezone: str) -> str:
                 next_date.year, next_date.month, next_date.day,
                 time_utc.hour, time_utc.minute, tzinfo=pytz.UTC).astimezone(tz)
 
-            return local_date.strftime("%A, %d de %B a las %H:%M").capitalize()
+            return local_date.strftime("%A, %d de %B a las %H:%M").capitalize() + f" ({timezone} {tz} {locale.getlocale()})"
 
     return ""
