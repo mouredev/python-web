@@ -130,7 +130,7 @@ def header(details=True) -> rx.Component:
                                 "/icons/twitch.svg",
                                 const.TWITCH_URL,
                                 highlight_color=Color.PURPLE.value
-                            ),
+                            )
                         ),
                         width="100%",
                         on_mount=PageState.check_schedule

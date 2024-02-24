@@ -87,6 +87,6 @@ def next_date(dates: dict, timezone: str) -> str:
 
             day = "Hoy" if weekday == 0 else weekdays[local_date.weekday()]
 
-            return local_date.strftime(f"{day.capitalize()}, %d/%m a las %H:%M") + f" ({timezone} {tz})"
+            return local_date.strftime(f"{day.capitalize()}, %d/%m a las %H:%M") + f" ({timezone})"
 
     return ""
