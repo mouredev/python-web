@@ -47,7 +47,7 @@ courses_meta.extend(_meta)
 def next_date(dates: dict) -> str:
 
     # Se fuerza el locale para traducir el formateo de fecha a español
-    locale.setlocale(locale.LC_TIME, "es_ES")
+    # locale.setlocale(locale.LC_TIME, "es_ES")
 
     if len(dates) == 0:
         return ""
