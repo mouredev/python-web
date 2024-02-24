@@ -3,3 +3,4 @@ reflex==0.4.1
 python-dotenv==1.0.1
 supabase==2.3.5
 configcat-client==9.0.2
+pytz==2024.1

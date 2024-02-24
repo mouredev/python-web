@@ -1,4 +1,6 @@
-from datetime import date, datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone
+import pytz
+import locale
 import reflex as rx
 
 # Común
@@ -44,35 +46,36 @@ courses_meta.extend(_meta)
 
 def next_date(dates: dict) -> str:
 
+    # Se fuerza el locale para traducir el formateo de fecha a español
+    locale.setlocale(locale.LC_TIME, "es_ES")
+
     if len(dates) == 0:
         return ""
 
     now = datetime.now()
-    current_weekday = now.weekday()
     current_time = now.astimezone().timetz()
 
-    for index in range(7):
+    for weekday in range(7):
 
-        day = str((current_weekday + index) % 7)
+        current_weekday = str((now.weekday() + weekday) % 7)
 
-        if day not in dates or dates[day] == "":
+        if current_weekday not in dates or dates[current_weekday] == "":
             continue
 
-        time_utc = datetime.strptime(
-            dates[day],
-            "%H:%M"
-        ).replace(tzinfo=timezone.utc).timetz()
+        time_utc = datetime.strptime(dates[current_weekday], "%H:%M").replace(
+            tzinfo=pytz.UTC).timetz()
 
-        time = datetime.combine(now.date(), time_utc).astimezone().timetz()
+        next_time = datetime.combine(
+            now.date(), time_utc).astimezone().timetz()
 
-        if current_time < time or index > 0:
+        if current_time < next_time or weekday > 0:
 
-            next_date = now + timedelta(days=index)
+            next_date = now + timedelta(days=weekday)
 
-            formatted_next_date = next_date.strftime(
-                "Hoy, %d/%m") if index == 0 else next_date.strftime("%A, %d/%m")
-            formatted_next_time = time.strftime("%H:%M")
+            local_date = datetime(
+                next_date.year, next_date.month, next_date.day,
+                time_utc.hour, time_utc.minute, tzinfo=pytz.UTC).astimezone()
 
-            return f"{formatted_next_date} a las {formatted_next_time}"
+            return local_date.strftime("%A, %d de %B a las %H:%M").capitalize()
 
     return ""
