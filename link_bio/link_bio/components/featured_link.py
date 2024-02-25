@@ -9,7 +9,7 @@ def featured_link(featured: Featured) -> rx.Component:
         rx.vstack(
             rx.image(
                 src=featured.image,
-                border_radius=Size.DEFAULT.value
+                border_radius=Size.DEFAULT.value,
             ),
             rx.text(
                 featured.title,
@@ -17,7 +17,8 @@ def featured_link(featured: Featured) -> rx.Component:
                 style=styles.button_body_style
             ),
             spacing=Spacing.SMALL.value,
-            align_items="start"
+            align_items="start",
+            class_name=styles.FADEIN_ANIMATION
         ),
         href=featured.url,
         is_external=True

@@ -55,8 +55,7 @@ def index_links() -> rx.Component:
                         featured_link
                     ),
                     flex_direction=["column", "row"],
-                    spacing=Spacing.DEFAULT.value,
-                    class_name=styles.FADEIN_ANIMATION
+                    spacing=Spacing.DEFAULT.value
                 ),
                 spacing=Spacing.DEFAULT.value
             )
