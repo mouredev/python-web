@@ -104,6 +104,6 @@ def next_date(dates: dict, timezone: str) -> str:
             zones = timezone.replace('_', ' ').split('/')
 
             return local_date.strftime(
-                f"{day}, %d de {MONTHS[local_date.month]} a las %H:%M | {zones[len(zones) - 1]}")
+                f"{day}, %d de {MONTHS[local_date.month]} a las %H:%M | Zona horaria: {zones[len(zones) - 1]}")
 
     return ""
