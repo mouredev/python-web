@@ -1,5 +1,5 @@
 pip==24.0
-reflex==0.4.3
+reflex==0.4.2
 python-dotenv==1.0.1
 supabase==2.3.5
 configcat-client==9.0.2
