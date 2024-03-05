@@ -59,6 +59,7 @@ BASE_STYLE = {
         "background_color": Color.CONTENT.value,
         "white_space": "normal",
         "text_align": "start",
+        "--cursor-button": "pointer",
         "_hover": {
             "background_color": Color.SECONDARY.value
         }
