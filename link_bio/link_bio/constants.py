@@ -15,6 +15,9 @@ YOUTUBE_URL = "https://youtube.com/@mouredev"
 YOUTUBE_SECONDARY_URL = "https://youtube.com/@mouredevtv"
 DISCORD_URL = "https://discord.gg/mouredev"
 
+# Newsletter
+NEWSLETTER_URL = "https://newsletter.moure.dev"
+
 # Recursos y más
 BOOK_URL = "https://mouredev.com/libro-git"
 BOOKS_URL = "https://amazon.es/shop/mouredev/list/2ZIHJJFJ9AVZ3"

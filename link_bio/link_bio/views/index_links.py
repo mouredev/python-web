@@ -45,6 +45,15 @@ def index_links() -> rx.Component:
             const.YOUTUBE_SECONDARY_URL
         ),
 
+        title("Newsletter"),
+        link_button(
+            "mouredev.log",
+            "La newsletter de la comunidad para mantenerse al día",
+            "/icons/news.svg",
+            const.NEWSLETTER_URL,
+            highlight_color=Color.SECONDARY.value
+        ),
+
         rx.cond(
             PageState.featured_info,
             rx.vstack(

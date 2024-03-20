@@ -54,6 +54,12 @@ def courses_links() -> rx.Component:
             const.YOUTUBE_URL
         ),
         link_button(
+            "mouredev.log",
+            "La newsletter de la comunidad para mantenerse al día",
+            "/icons/news.svg",
+            const.NEWSLETTER_URL
+        ),
+        link_button(
             "YouTube [canal secundario]",
             "Emisiones en directo destacadas",
             "/icons/youtube.svg",
