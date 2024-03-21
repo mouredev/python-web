@@ -2,7 +2,8 @@ import reflex as rx
 import link_bio.constants as const
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
-from link_bio.styles.styles import Size, Color, Spacing
+from link_bio.components.newsletter import newsletter
+from link_bio.styles.styles import Color, Spacing
 
 
 def courses_links() -> rx.Component:
@@ -54,17 +55,12 @@ def courses_links() -> rx.Component:
             const.YOUTUBE_URL
         ),
         link_button(
-            "mouredev.log",
-            "La newsletter de la comunidad para mantenerse al día",
-            "/icons/news.svg",
-            const.NEWSLETTER_URL
-        ),
-        link_button(
             "YouTube [canal secundario]",
             "Emisiones en directo destacadas",
             "/icons/youtube.svg",
             const.YOUTUBE_SECONDARY_URL
         ),
+        newsletter(),
         width="100%",
         spacing=Spacing.DEFAULT.value,
     )
