@@ -31,7 +31,7 @@ MYPUBLICINBOX_URL = "https://mypublicinbox.com/mouredev"
 EMAIL = "braismoure@mouredev.com"
 
 # Sponsors
-ELGATO_URL = "https://e.lga.to/MoureDev"
+ELGATO_URL = "https://elgato.sjv.io/mouredev"
 MVP_URL = "https://mvp.microsoft.com/es-es/PublicProfile/5004970"
 GITHUB_STAR_URL = "https://stars.github.com/profiles/mouredev"
 
