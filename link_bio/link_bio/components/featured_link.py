@@ -10,7 +10,10 @@ def featured_link(featured: Featured) -> rx.Component:
             rx.image(
                 src=featured.image,
                 border_radius=Size.DEFAULT.value,
-                background=Color.CONTENT.value
+                background=Color.CONTENT.value,
+                width="100%",
+                height="auto",
+                alt=f"Imagen destacada para: {featured.title}"
             ),
             rx.text(
                 featured.title,
