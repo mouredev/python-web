@@ -12,19 +12,9 @@
 
 ## ⚠️ [NUEVO] Curso de Python Web Avanzado
 
-Curso finalizado. En las próximas semanas se subirá editado a YouTube. Por el momento, aquí tienes las clases en Twitch.
-
-- [Clase 1 [18/01/24]: Actualización, refactor, Router, componentes React y hosting Reflex](https://www.twitch.tv/videos/2036419660?t=00h14m41s)
-- [Clase 2 [25/01/24]: Backend, Docker, CORS y GitHub Actions](https://www.twitch.tv/videos/2043357705?t=00h17m22s)
-- [Clase 3 [01/02/24]: Estados, API REST e integración API Twitch](https://www.twitch.tv/videos/2050175668?t=00h16m05s)
-- [Clase 4 [08/02/24]: Integración Supabase PostgreSQL](https://www.twitch.tv/videos/2057000877?t=00h16m10s)
-- [Clase 5 [16/02/24]: Variables custom](https://www.twitch.tv/videos/2063647841?t=00h12m08s)
-- [Clase 6 [23/02/24]: Feature flags y migración a Radix UI](https://www.twitch.tv/videos/2070550680?t=00h17m52s)
-- [Clase 7 [07/03/24]: Cliente/servidor, animaciones y otras características](https://www.twitch.tv/videos/2083987765?t=00h15m09s)
+El curso de más de 6 horas se publicará en [YouTube](https://youtube.com/@mouredev) el viernes [05/04/24 las 17:30](https://discord.gg/mouredev?event=1224292234938024007) (hora España).
 
 Continuación del curso desde cero de 6 horas. En esta sección más avanzada se aprenderán diferentes conceptos relacionados con el desarrollo web con Python y Reflex: Router, backend, APIs, eventos, estados, base de datos, Docker, y más...
-
-*Una vez se finalice el curso se creará un vídeo en YouTube, al igual que con la primera parte. Mientras tanto, los vídeos se guardan en Twitch durante 2 meses.*
 
 ## Sobre el curso: muy importante
 
