@@ -30,7 +30,7 @@ def courses_links() -> rx.Component:
         ),
         link_button(
             "SQL y Bases de Datos",
-            "Curso de 7h desde cero para aprender los fudamentos de SQL",
+            "Curso de 7h desde cero para aprender los fundamentos de SQL",
             "/icons/sql.svg",
             const.SQL_COURSE_URL
         ),
