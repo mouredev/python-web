@@ -18,7 +18,7 @@ def courses_links() -> rx.Component:
         ),
         link_button(
             "Python desde cero",
-            "Curso de +37h: Fundamentos, frontend, backend, testing...",
+            "Curso de +44h: Fundamentos, frontend, backend, testing...",
             "/icons/python.svg",
             const.PYTHON_COURSE_URL
         ),
