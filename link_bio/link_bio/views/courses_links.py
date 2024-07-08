@@ -17,6 +17,12 @@ def courses_links() -> rx.Component:
             highlight_color=Color.SECONDARY.value
         ),
         link_button(
+            "JavaScript desde cero",
+            "¡Nuevo! Curso en desarrollo",
+            "/icons/js.svg",
+            const.JS_COURSE_URL
+        ),
+        link_button(
             "Python desde cero",
             "Curso de +44h: Fundamentos, frontend, backend, testing...",
             "/icons/python.svg",
