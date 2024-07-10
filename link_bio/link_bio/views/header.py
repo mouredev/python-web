@@ -108,7 +108,7 @@ def header(details=True) -> rx.Component:
                     ),
                     rx.spacer(),
                     info_text(
-                        "1.7M+", "seguidores"
+                        "2M+", "seguidores"
                     ),
                     width="100%"
                 ),
