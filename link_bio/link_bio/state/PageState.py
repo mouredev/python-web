@@ -17,14 +17,14 @@ class PageState(rx.State):
     async def check_live(self):
         self.live_status = await live(USER)
 
-    def check_schedule(self):
+    async def check_schedule(self):
         if self.timezone == "":
             return rx.call_script(
                 utils.LOCAL_TIMEZONE_SCRIPT,
                 PageState.update_timezone
             )
         else:
-            self.update_timezone(self.timezone)
+            await self.update_timezone(self.timezone)
 
     async def update_timezone(self, timezone: str):
         self.timezone = timezone

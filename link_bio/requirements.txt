@@ -1,6 +1,6 @@
-pip==24.1.2
-reflex==0.4.5
+pip==24.2
+reflex==0.5.9
 python-dotenv==1.0.1
 supabase==2.3.5
-configcat-client==9.0.2
+configcat-client==9.0.4
 pytz==2024.1
