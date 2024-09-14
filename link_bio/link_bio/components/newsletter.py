@@ -16,7 +16,7 @@ def newsletter() -> rx.Component:
         rx.chakra.box(
             element="iframe",
             src="https://embeds.beehiiv.com/c9c3f7b7-7ed9-428a-a58f-cb53577fa352?slim=true",
-            height="74px",
+            height="75px",
             width="100%"
         ),
         spacing=Spacing.DEFAULT.value,
