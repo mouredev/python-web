@@ -10,6 +10,7 @@ SPOTIFY_URL = "https://open.spotify.com/show/4iKXt5k2zCbAQOrMePh7qh"
 LINKEDIN_URL = "https://linkedin.com/in/braismoure/"
 
 # Comunidad
+PRO_URL = "https://mouredev.pro"
 TWITCH_URL = "https://twitch.tv/mouredev"
 YOUTUBE_URL = "https://youtube.com/@mouredev"
 YOUTUBE_SECONDARY_URL = "https://youtube.com/@mouredevtv"
