@@ -3,7 +3,7 @@ import datetime
 import link_bio.constants as const
 from link_bio.styles.styles import Size, Spacing
 from link_bio.styles.colors import Color, TextColor
-from link_bio.components.ant_components import float_button
+# from link_bio.components.ant_components import float_button
 
 
 def footer() -> rx.Component:
@@ -46,10 +46,10 @@ def footer() -> rx.Component:
             href=const.REPO_URL,
             is_external=True
         ),
-        float_button(
-            icon=rx.image(src="/icons/donate.svg"),
-            href=const.COFFEE_URL
-        ),
+        # float_button(
+        #     icon=rx.image(src="/icons/donate.svg"),
+        #     href=const.COFFEE_URL
+        # ),
         align="center",
         margin_bottom=Size.BIG.value,
         padding_bottom=Size.VERY_BIG.value,
