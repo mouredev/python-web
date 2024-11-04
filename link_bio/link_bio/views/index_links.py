@@ -13,7 +13,7 @@ def index_links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
         link_button(
-            "¡Muy pronto! mouredev pro",
+            "mouredev pro | 12 de noviembre",
             "Estudia programación de manera diferente",
             "/icons/pro.svg",
             const.PRO_URL,

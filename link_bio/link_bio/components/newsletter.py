@@ -1,7 +1,6 @@
 import reflex as rx
 import link_bio.constants as const
 from link_bio.components.link_button import link_button
-from link_bio.styles.colors import Color
 from link_bio.styles.styles import Spacing
 
 
