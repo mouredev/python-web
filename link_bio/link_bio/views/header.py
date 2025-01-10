@@ -122,21 +122,21 @@ def header(details=True) -> rx.Component:
                         highlight_color=Color.PURPLE.value,
                         animated=True
                     ),
-                    rx.box(
-                        rx.cond(
-                            PageState.next_live,
-                            link_button(
-                                "Próximo directo",
-                                PageState.next_live,
-                                "/icons/twitch.svg",
-                                const.TWITCH_URL,
-                                highlight_color=Color.PURPLE.value,
-                                animated=True
-                            ),
-                        ),
-                        width="100%",
-                        on_mount=PageState.check_schedule
-                    )
+                    # rx.box(
+                    #     rx.cond(
+                    #         PageState.next_live,
+                    #         link_button(
+                    #             "Próximo directo",
+                    #             PageState.next_live,
+                    #             "/icons/twitch.svg",
+                    #             const.TWITCH_URL,
+                    #             highlight_color=Color.PURPLE.value,
+                    #             animated=True
+                    #         ),
+                    #     ),
+                    #     width="100%",
+                    #     on_mount=PageState.check_schedule
+                    # )
                 ),
                 rx.text(
                     f"""
