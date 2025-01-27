@@ -30,7 +30,7 @@ def index_links() -> rx.Component:
         ),
         link_button(
             "Twitch",
-            "Transmisiones sobre programación de lunes a viernes",
+            "Transmisiones sobre programación y desarrollo",
             "/icons/twitch.svg",
             const.TWITCH_URL
         ),

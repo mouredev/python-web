@@ -50,7 +50,7 @@ def courses_links() -> rx.Component:
         title("Mucho más en"),
         link_button(
             "Twitch",
-            "Transmisiones sobre programación de lunes a viernes",
+            "Transmisiones sobre programación y desarrollo",
             "/icons/twitch.svg",
             const.TWITCH_URL
         ),
