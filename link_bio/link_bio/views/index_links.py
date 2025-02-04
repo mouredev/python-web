@@ -42,7 +42,7 @@ def index_links() -> rx.Component:
         ),
         link_button(
             "YouTube",
-            "Tutoriales sobre desarrollo de software semanales",
+            "Cursos y tutoriales sobre desarrollo de software",
             "/icons/youtube.svg",
             const.YOUTUBE_URL
         ),

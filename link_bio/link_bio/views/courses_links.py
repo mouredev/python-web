@@ -11,7 +11,7 @@ def courses_links() -> rx.Component:
         title("Cursos gratis"),
         link_button(
             "Retos de programación",
-            "Ruta de estudio semanal para practicar lógica",
+            "Practica lógica con ejercicios y proyectos reales",
             "/icons/challenges.png",
             const.CODE_CHALLENGES_URL,
             highlight_color=Color.SECONDARY.value
@@ -56,7 +56,7 @@ def courses_links() -> rx.Component:
         ),
         link_button(
             "YouTube",
-            "Tutoriales sobre desarrollo de software semanales",
+            "Cursos y tutoriales sobre desarrollo de software",
             "/icons/youtube.svg",
             const.YOUTUBE_URL
         ),
