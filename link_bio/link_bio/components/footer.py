@@ -46,6 +46,24 @@ def footer() -> rx.Component:
             href=const.REPO_URL,
             is_external=True
         ),
+        rx.text(
+            "Con el apoyo de",
+            rx.next.image(
+                src=f"/raiola_networks.svg",
+                on_click=rx.redirect(
+                    const.RAIOLA_NETWORKS_URL,
+                    external=True
+                ),
+                width="200px",
+                height="100%",
+                cursor="pointer",
+                padding_x=Size.MEDIUM.value,
+                alt="Logo Raiola Networks"
+            ),
+            font_size=Size.MEDIUM.value,
+            display="flex",
+            align_items="center"
+        ),
         # Se deja de utilizar hasta que se actualice la versión de next.js
         # float_button(
         #     icon=rx.image(src="/icons/donate.svg"),

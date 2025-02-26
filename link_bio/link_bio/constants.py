@@ -35,6 +35,7 @@ EMAIL = "braismoure@mouredev.com"
 ELGATO_URL = "https://elgato.sjv.io/mouredev"
 MVP_URL = "https://mvp.microsoft.com/es-es/PublicProfile/5004970"
 GITHUB_STAR_URL = "https://stars.github.com/profiles/mouredev"
+RAIOLA_NETWORKS_URL = "https://mouredev.link/raiola"
 
 # Cursos
 CODE_CHALLENGES_URL = "https://retosdeprogramacion.com"
