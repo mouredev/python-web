@@ -48,7 +48,7 @@ def footer() -> rx.Component:
         ),
         rx.text(
             "Con el apoyo de",
-            rx.next.image(
+            rx.image(
                 src=f"/raiola_networks.svg",
                 on_click=rx.redirect(
                     const.RAIOLA_NETWORKS_URL,
