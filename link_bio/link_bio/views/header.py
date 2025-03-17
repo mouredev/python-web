@@ -1,6 +1,7 @@
 import reflex as rx
 import datetime
 import link_bio.constants as const
+from link_bio.styles.fonts import FontWeight
 from link_bio.styles.styles import Size, Spacing
 from link_bio.styles.colors import Color, TextColor
 from link_bio.components.link_icon import link_icon
@@ -37,8 +38,8 @@ def header(details=True) -> rx.Component:
                     size=Spacing.MEDIUM_BIG.value,
                     src="/avatar.jpg",
                     radius="full",
-                    color=TextColor.BODY.value,
-                    bg=Color.CONTENT.value,
+                    color=TextColor.LIGHT.value,
+                    bg=Color.DARK.value,
                     padding="2px",
                     border=f"4px solid {Color.PRIMARY.value}"
                 ),
@@ -47,6 +48,7 @@ def header(details=True) -> rx.Component:
             rx.vstack(
                 rx.heading(
                     "Brais Moure",
+                    font_weight=FontWeight.BOLD.value,
                     size=Spacing.BIG.value
                 ),
                 rx.text(
@@ -104,11 +106,11 @@ def header(details=True) -> rx.Component:
                     ),
                     rx.spacer(),
                     info_text(
-                        "100+", "aplicaciones creadas"
+                        "150+", "aplicaciones creadas"
                     ),
                     rx.spacer(),
                     info_text(
-                        "2M+", "seguidores"
+                        "2.5M+", "seguidores"
                     ),
                     width="100%"
                 ),
@@ -146,7 +148,7 @@ def header(details=True) -> rx.Component:
                     Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
                     """,
                     font_size=Size.DEFAULT.value,
-                    color=TextColor.BODY.value
+                    color=TextColor.LIGHT.value
                 ),
                 width="100%",
                 spacing=Spacing.BIG.value

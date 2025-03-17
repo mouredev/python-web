@@ -1,5 +1,9 @@
 body {
-    background-color: #0C151D;
+    background-color: #1A1A1A;
+}
+
+a:hover {
+    color: #3EB0F9 !important;
 }
 
 @keyframes blinker {

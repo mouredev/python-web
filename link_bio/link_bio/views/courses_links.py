@@ -14,7 +14,7 @@ def courses_links() -> rx.Component:
             "Practica lógica con ejercicios y proyectos reales",
             "/icons/challenges.png",
             const.CODE_CHALLENGES_URL,
-            highlight_color=Color.SECONDARY.value
+            highlight_color=Color.PRIMARY.value
         ),
         link_button(
             "JavaScript desde cero",

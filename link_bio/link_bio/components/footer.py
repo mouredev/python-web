@@ -9,7 +9,7 @@ from link_bio.styles.colors import Color, TextColor
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="/logo.png",
+            src="/logo_symbol.svg",
             height=Size.VERY_BIG.value,
             width=Size.VERY_BIG.value,
             alt="Logotipo de MoureDev. Una \"eme\" entre llaves."
@@ -38,10 +38,10 @@ def footer() -> rx.Component:
                     alt="Logo GitHub"
                 ),
                 rx.text(
-                    "BUILDING SOFTWARE WITH ♥ FROM GALICIA TO THE WORLD.",
+                    "Building software with ♥ from Galicia to the world.",
                     font_size=Size.MEDIUM.value,
                     margin_top=Size.ZERO.value
-                ),
+                )
             ),
             href=const.REPO_URL,
             is_external=True
@@ -74,5 +74,5 @@ def footer() -> rx.Component:
         padding_bottom=Size.VERY_BIG.value,
         padding_x=Size.BIG.value,
         spacing=Spacing.ZERO.value,
-        color=TextColor.FOOTER.value
+        color=TextColor.LIGHT.value
     )

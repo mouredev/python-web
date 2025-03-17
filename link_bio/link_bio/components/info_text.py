@@ -13,5 +13,5 @@ def info_text(title: str, body: str) -> rx.Component:
         ),
         f" {body}",
         font_size=Size.MEDIUM.value,
-        color=TextColor.BODY.value
+        color=TextColor.LIGHT.value
     )

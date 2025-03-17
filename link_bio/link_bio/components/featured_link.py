@@ -9,16 +9,14 @@ def featured_link(featured: Featured) -> rx.Component:
         rx.vstack(
             rx.image(
                 src=featured.image,
-                border_radius=Size.DEFAULT.value,
-                background=Color.CONTENT.value,
+                background=Color.PRIMARY.value,
                 width="100%",
                 height="auto",
                 alt=f"Imagen destacada para: {featured.title}"
             ),
             rx.text(
                 featured.title,
-                size=Spacing.VERY_SMALL.value,
-                style=styles.button_body_style
+                size=Spacing.VERY_SMALL.value
             ),
             spacing=Spacing.SMALL.value,
             align_items="start",

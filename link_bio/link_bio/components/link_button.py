@@ -1,4 +1,5 @@
 import reflex as rx
+from link_bio.styles.colors import Color
 import link_bio.styles.styles as styles
 from link_bio.styles.styles import Size, Spacing
 
@@ -23,13 +24,11 @@ def link_button(title: str,
             rx.vstack(
                 rx.text(
                     title,
-                    size=Spacing.SMALL.value,
-                    style=styles.button_title_style
+                    size=Spacing.SMALL.value
                 ),
                 rx.text(
                     body,
-                    size=Spacing.VERY_SMALL.value,
-                    style=styles.button_body_style
+                    size=Spacing.VERY_SMALL.value
                 ),
                 align_items="start",
                 spacing=Spacing.VERY_SMALL.value,
@@ -39,7 +38,9 @@ def link_button(title: str,
             align="center",
             width="100%"
         ),
-        border=f"{'2px' if highlight_color != None else '0px'} solid {highlight_color}",
+        variant="solid",
+        radius="none",
+        background_color=highlight_color if highlight_color != None else Color.PRIMARY.value,
         class_name=styles.BOUNCEIN_ANIMATION if animated else None,
         on_click=rx.redirect(path=url, is_external=is_external)
     )

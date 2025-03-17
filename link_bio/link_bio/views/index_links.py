@@ -26,7 +26,7 @@ def index_links() -> rx.Component:
             "/icons/code.svg",
             Route.COURSES.value,
             False,
-            Color.SECONDARY.value
+            Color.PRIMARY.value
         ),
         link_button(
             "Twitch",
@@ -91,7 +91,7 @@ def index_links() -> rx.Component:
         link_button(
             "MoureDev",
             "Mi sitio web",
-            "/icons/logo.png",
+            "/icons/logo_symbol.svg",
             const.MOUREDEV_URL
         ),
         link_button(
