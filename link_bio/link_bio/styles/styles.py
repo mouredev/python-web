@@ -49,20 +49,6 @@ BASE_STYLE = {
         "font_family": Font.DEFAULT.value,
         "font_weight": FontWeight.MEDIUM.value
     },
-    # rx.button: {
-    #     "width": "100%",
-    #     "height": "100%",
-    #     "padding": Size.SMALL.value,
-    #     "border_radius": Size.DEFAULT.value,
-    #     "color": TextColor.LIGHT.value,
-    #     "background_color": Color.DARK.value,
-    #     "white_space": "normal",
-    #     "text_align": "start",
-    #     "--cursor-button": "pointer",
-    #     "_hover": {
-    #         "background_color": Color.PRIMARY.value
-    #     }
-    # },
     rx.button: {
         "width": "100%",
         "height": "100%",
