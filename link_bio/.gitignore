@@ -1,3 +1,4 @@
+.states
 *.db
 *.py[cod]
 .env

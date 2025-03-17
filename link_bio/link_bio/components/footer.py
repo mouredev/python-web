@@ -52,7 +52,7 @@ def footer() -> rx.Component:
                 src=f"/raiola_networks.svg",
                 on_click=rx.redirect(
                     const.RAIOLA_NETWORKS_URL,
-                    external=True
+                    is_external=True
                 ),
                 width="200px",
                 height="100%",
