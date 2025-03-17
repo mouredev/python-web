@@ -5,5 +5,6 @@ config = rx.Config(
     cors_allowed_origins=[
         "http://localhost:3000",
         "https://moure.dev"
-    ]
+    ],
+    show_built_with_reflex=False
 )
