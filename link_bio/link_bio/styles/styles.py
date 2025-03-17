@@ -68,8 +68,6 @@ BASE_STYLE = {
         "height": "100%",
         "font_weight": FontWeight.MEDIUM.value,
         "cursor": "pointer",
-        # "padding_x": "32px",
-        # "padding_y": "16px",
         "white_space": "nowrap",
         "transition": "transform 0.05s ease",
         "color": Color.DARK.value,
