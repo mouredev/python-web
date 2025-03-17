@@ -8,7 +8,7 @@ from link_bio.styles.colors import Color
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.link(
-            rx.next.image(
+            rx.image(
                 src="/logo.svg",
                 width="auto",
                 height=Size.LARGE.value,
