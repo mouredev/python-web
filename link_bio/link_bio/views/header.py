@@ -32,17 +32,19 @@ def header(details=True) -> rx.Component:
                         bg=Color.PURPLE.value,
                         position="absolute",
                         top=f"-{Size.DEFAULT.value}",
-                        right=f"-{Size.DEFAULT.value}"
+                        right=f"-{Size.DEFAULT.value}",
+                        z_index="2"
                     )
                 ),
                 rx.avatar(
                     name="Brais Moure",
                     size=Spacing.MEDIUM_BIG.value,
-                    src="/avatar.jpg",
+                    src="/avatar.webp",
                     radius="none",
                     color=TextColor.LIGHT.value,
                     bg=Color.DARK.value,
-                    style=styles.image_style
+                    style=styles.image_style,
+                    alt="Avatar MoureDev"
                 ),
                 position="relative"
             ),
