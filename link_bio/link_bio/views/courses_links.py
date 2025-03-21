@@ -10,23 +10,16 @@ def courses_links() -> rx.Component:
     return rx.vstack(
         title("Cursos gratis"),
         link_button(
-            "Retos de programación",
-            "Practica lógica con ejercicios y proyectos reales",
-            "/icons/challenges.png",
-            const.CODE_CHALLENGES_URL,
-            highlight_color=Color.PRIMARY.value
-        ),
-        link_button(
-            "JavaScript desde cero",
-            "¡Nuevo! Curso en desarrollo",
-            "/icons/js.svg",
-            const.JS_COURSE_URL
-        ),
-        link_button(
             "Python desde cero",
             "Curso de +44h: Fundamentos, frontend, backend, testing...",
             "/icons/python.svg",
             const.PYTHON_COURSE_URL
+        ),
+        link_button(
+            "JavaScript desde cero",
+            "Curso de +6h y 45 clases",
+            "/icons/js.svg",
+            const.JS_COURSE_URL
         ),
         link_button(
             "Git y GitHub",
@@ -39,6 +32,12 @@ def courses_links() -> rx.Component:
             "Curso de 7h desde cero para aprender los fundamentos de SQL",
             "/icons/sql.svg",
             const.SQL_COURSE_URL
+        ),
+        link_button(
+            "Retos de programación",
+            "Practica lógica con ejercicios y proyectos reales",
+            "/icons/challenges.png",
+            const.CODE_CHALLENGES_URL
         ),
         link_button(
             "Un día, un lenguaje",

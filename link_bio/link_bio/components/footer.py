@@ -70,7 +70,6 @@ def footer() -> rx.Component:
         #     href=const.COFFEE_URL
         # ),
         align="center",
-        margin_bottom=Size.BIG.value,
         padding_bottom=Size.VERY_BIG.value,
         padding_x=Size.BIG.value,
         spacing=Spacing.ZERO.value,

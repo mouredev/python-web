@@ -18,7 +18,7 @@ def index_links() -> rx.Component:
             "/icons/pro.svg",
             const.PRO_URL,
             True,
-            Color.PRO.value
+            Color.ORANGE.value
         ),
         link_button(
             "Cursos gratis",
@@ -26,7 +26,7 @@ def index_links() -> rx.Component:
             "/icons/code.svg",
             Route.COURSES.value,
             False,
-            Color.PRIMARY.value
+            Color.YELLOW.value
         ),
         link_button(
             "Twitch",

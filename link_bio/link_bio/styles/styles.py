@@ -44,6 +44,9 @@ BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "font_weight": FontWeight.REGULAR.value,
     "background_color": Color.DARK.value,
+    "background_image": "url('/bg_dark_pattern.png')",
+    "background_repeat": "repeat",
+    "background_attachment": "fixed",
     rx.heading: {
         "color": TextColor.LIGHT.value,
         "font_family": Font.DEFAULT.value,
@@ -60,8 +63,6 @@ BASE_STYLE = {
         "border": f"1px solid {Color.LIGHT.value}",
         "box_shadow": f"3px 3px 0px 0px {Color.LIGHT.value}",
         "_hover": {
-            "color": Color.LIGHT.value,
-            "background": Color.DARK.value,
             "box_shadow": "none",
             "transform": "translate(3px, 3px)"
         }
@@ -80,3 +81,12 @@ title_style = dict(
     font_size=Size.LARGE.value,
     font_weight=FontWeight.BOLD.value,
 )
+
+image_style = {
+    "border": f"1px solid {Color.LIGHT.value}",
+    "box_shadow": f"3px 3px 0px 0px {Color.LIGHT.value}",
+    "_hover": {
+        "box_shadow": f"6px 6px 0px 0px {Color.LIGHT.value}",
+        "transform": "translate(-3px, -3px)"
+    }
+}

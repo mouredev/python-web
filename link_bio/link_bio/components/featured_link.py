@@ -12,6 +12,7 @@ def featured_link(featured: Featured) -> rx.Component:
                 background=Color.PRIMARY.value,
                 width="100%",
                 height="auto",
+                border_radius="6px",
                 alt=f"Imagen destacada para: {featured.title}"
             ),
             rx.text(

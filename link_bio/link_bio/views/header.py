@@ -1,6 +1,8 @@
+from click import style
 import reflex as rx
 import datetime
 import link_bio.constants as const
+from link_bio.styles import styles
 from link_bio.styles.fonts import FontWeight
 from link_bio.styles.styles import Size, Spacing
 from link_bio.styles.colors import Color, TextColor
@@ -29,19 +31,18 @@ def header(details=True) -> rx.Component:
                         padding=Size.SMALL.value,
                         bg=Color.PURPLE.value,
                         position="absolute",
-                        bottom="0",
-                        right="0"
+                        top=f"-{Size.DEFAULT.value}",
+                        right=f"-{Size.DEFAULT.value}"
                     )
                 ),
                 rx.avatar(
                     name="Brais Moure",
                     size=Spacing.MEDIUM_BIG.value,
                     src="/avatar.jpg",
-                    radius="full",
+                    radius="none",
                     color=TextColor.LIGHT.value,
                     bg=Color.DARK.value,
-                    padding="2px",
-                    border=f"4px solid {Color.PRIMARY.value}"
+                    style=styles.image_style
                 ),
                 position="relative"
             ),
@@ -142,9 +143,8 @@ def header(details=True) -> rx.Component:
                 ),
                 rx.text(
                     f"""
-                    Soy ingeniero de software y actualmente trabajo como freelance
-                    full-stack developer iOS y Android.
-                    Además, creo contenido formativo sobre programación en redes.
+                    Soy ingeniero de software freelance
+                    fullstack especializado en desarrollo mobile, divulgador y creador de contenido formativo sobre programación.
                     Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
                     """,
                     font_size=Size.DEFAULT.value,
