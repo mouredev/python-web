@@ -10,6 +10,13 @@ def courses_links() -> rx.Component:
     return rx.vstack(
         title("Cursos gratis"),
         link_button(
+            "Java desde cero [en desarrollo]",
+            "Nuevo curso de fundamentos para principiantes",
+            "/icons/java.svg",
+            const.JAVA_COURSE_URL,
+            highlight_color=Color.YELLOW
+        ),
+        link_button(
             "Python desde cero",
             "Curso de +44h: Fundamentos, frontend, backend, testing...",
             "/icons/python.svg",
