@@ -81,16 +81,21 @@ def header(details=True) -> rx.Component:
                         "TikTok"
                     ),
                     link_icon(
-                        "/icons/spotify.svg",
-                        const.SPOTIFY_URL,
-                        "Spotify"
+                        "/icons/facebook.svg",
+                        const.FACEBOOK_URL,
+                        "Facebook"
                     ),
+                    # link_icon(
+                    #     "/icons/spotify.svg",
+                    #     const.SPOTIFY_URL,
+                    #     "Spotify"
+                    # ),
                     link_icon(
                         "/icons/linkedin.svg",
                         const.LINKEDIN_URL,
                         "LinkedIn"
                     ),
-                    spacing=Spacing.LARGE.value,
+                    spacing=Spacing.DEFAULT.value,
                     padding_top=Size.SMALL.value
                 ),
                 spacing=Spacing.ZERO.value,
