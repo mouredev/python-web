@@ -24,7 +24,7 @@ def courses_links() -> rx.Component:
         ),
         link_button(
             "JavaScript desde cero",
-            "Curso de +6h y 45 clases",
+            "Curso de +14h, 120 lecciones y 220 ejercicios",
             "/icons/js.svg",
             const.JS_COURSE_URL
         ),

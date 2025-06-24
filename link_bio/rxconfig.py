@@ -6,5 +6,6 @@ config = rx.Config(
         "http://localhost:3000",
         "https://moure.dev"
     ],
+    tailwind=None,
     show_built_with_reflex=False
 )
