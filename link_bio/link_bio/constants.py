@@ -40,6 +40,7 @@ RAIOLA_NETWORKS_URL = "https://mouredev.link/raiola"
 
 # Cursos
 CODE_CHALLENGES_URL = "https://retosdeprogramacion.com"
+BASH_COURSE_URL = "https://mouredev.link/bash"
 JAVA_COURSE_URL = "https://mouredev.link/java"
 PYTHON_COURSE_URL = "https://mouredev.link/python"
 JS_COURSE_URL = "https://mouredev.link/javascript"
