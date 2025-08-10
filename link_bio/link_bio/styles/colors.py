@@ -8,6 +8,7 @@ class Color(Enum):
     PURPLE = "#7D00FE"
     YELLOW = "#FFA61E"
     ORANGE = "#FF5500"
+    GREEN = "#00AA47"
 
 
 class TextColor(Enum):

@@ -1,6 +1,7 @@
 import reflex as rx
 import link_bio.utils as utils
 import link_bio.styles.styles as styles
+from link_bio.routes import Route
 from link_bio.components.navbar import navbar
 from link_bio.components.footer import footer
 from link_bio.views.header import header
@@ -10,6 +11,7 @@ from link_bio.styles.styles import Size
 
 
 @rx.page(
+    route=Route.INDEX.value,
     title=utils.index_title,
     description=utils.index_description,
     image=utils.preview,

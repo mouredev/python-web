@@ -58,25 +58,34 @@ def courses_links() -> rx.Component:
             "/icons/code.svg",
             const.LANGUAGES_COURSE_URL
         ),
-
         title("Mucho más en"),
         link_button(
-            "Twitch",
-            "Transmisiones sobre programación y desarrollo",
-            "/icons/twitch.svg",
-            const.TWITCH_URL
+            "mouredev pro",
+            "Estudia programación de manera diferente",
+            "/icons/pro.svg",
+            const.PRO_URL,
+            True,
+            Color.ORANGE.value
+        ),
+        link_button(
+            "Guías de programación",
+            "Mi listado de guías gratis en PDF para aprender desarrollo",
+            "/icons/book.svg",
+            const.RESOURCES_URL,
+            True,
+            Color.GREEN.value
+        ),
+        link_button(
+            "Discord",
+            "El chat y los grupos de estudio de la comunidad",
+            "/icons/discord.svg",
+            const.DISCORD_URL
         ),
         link_button(
             "YouTube",
             "Cursos y tutoriales sobre desarrollo de software",
             "/icons/youtube.svg",
             const.YOUTUBE_URL
-        ),
-        link_button(
-            "YouTube [canal secundario]",
-            "Emisiones en directo destacadas",
-            "/icons/youtube.svg",
-            const.YOUTUBE_SECONDARY_URL
         ),
         newsletter(),
         width="100%",

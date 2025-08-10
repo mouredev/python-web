@@ -29,10 +29,12 @@ def index_links() -> rx.Component:
             Color.YELLOW.value
         ),
         link_button(
-            "Twitch",
-            "Transmisiones sobre programación y desarrollo",
-            "/icons/twitch.svg",
-            const.TWITCH_URL
+            "Guías de programación",
+            "Mi listado de guías gratis en PDF para aprender desarrollo",
+            "/icons/book.svg",
+            const.RESOURCES_URL,
+            True,
+            Color.GREEN.value
         ),
         link_button(
             "Discord",
@@ -46,13 +48,8 @@ def index_links() -> rx.Component:
             "/icons/youtube.svg",
             const.YOUTUBE_URL
         ),
-        link_button(
-            "YouTube | canal secundario",
-            "Emisiones en directo destacadas",
-            "/icons/youtube.svg",
-            const.YOUTUBE_SECONDARY_URL
-        ),
-
+        title("Newsletter"),
+        newsletter(),
         rx.cond(
             PageState.featured_info,
             rx.vstack(
@@ -68,7 +65,6 @@ def index_links() -> rx.Component:
                 spacing=Spacing.DEFAULT.value
             )
         ),
-
         title("Recursos y más"),
         link_button(
             "Git y GitHub desde cero",
@@ -77,23 +73,35 @@ def index_links() -> rx.Component:
             const.BOOK_URL
         ),
         link_button(
-            "Libros recomendados",
-            "Mi listado de libros sobre programación, ciencia y tecnología",
-            "/icons/book.svg",
-            const.BOOKS_URL
+            "Twitch",
+            "Transmisiones sobre programación y desarrollo",
+            "/icons/twitch.svg",
+            const.TWITCH_URL
         ),
         link_button(
-            "Mi setup",
-            "Listado con todos los elementos que uso en mi trabajo",
-            "/icons/setup.svg",
-            const.SETUP_URL
+            "YouTube | canal secundario",
+            "Emisiones en directo destacadas",
+            "/icons/youtube.svg",
+            const.YOUTUBE_SECONDARY_URL
         ),
-        link_button(
-            "MoureDev",
-            "Mi sitio web",
-            "/icons/logo_symbol.svg",
-            const.MOUREDEV_URL
-        ),
+        # link_button(
+        #     "Libros recomendados",
+        #     "Mi listado de libros sobre programación, ciencia y tecnología",
+        #     "/icons/book.svg",
+        #     const.BOOKS_URL
+        # ),
+        # link_button(
+        #     "Mi setup",
+        #     "Listado con todos los elementos que uso en mi trabajo",
+        #     "/icons/setup.svg",
+        #     const.SETUP_URL
+        # ),
+        # link_button(
+        #     "MoureDev",
+        #     "Mi sitio web",
+        #     "/icons/logo_symbol.svg",
+        #     const.MOUREDEV_URL
+        # ),
         link_button(
             "Invítame a un café",
             "¿Quieres ayudarme a que siga creando contenido?",
@@ -114,9 +122,6 @@ def index_links() -> rx.Component:
             "/icons/email.svg",
             f"mailto:{const.EMAIL}"
         ),
-
-        title("Newsletter"),
-        newsletter(),
         width="100%",
         spacing=Spacing.DEFAULT.value,
         on_mount=PageState.featured_links
