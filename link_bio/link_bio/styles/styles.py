@@ -30,6 +30,7 @@ class Size(Enum):
 class Spacing(Enum):
     ZERO = "0"
     VERY_SMALL = "1"
+    MEDIUM_SMALL = "2"
     SMALL = "3"
     DEFAULT = "4"
     LARGE = "5"

@@ -12,16 +12,17 @@ LINKEDIN_URL = "https://linkedin.com/in/braismoure/"
 
 # Comunidad
 PRO_URL = "https://mouredev.pro"
-TWITCH_URL = "https://twitch.tv/mouredev"
 YOUTUBE_URL = "https://youtube.com/@mouredev"
-YOUTUBE_SECONDARY_URL = "https://youtube.com/@mouredevtv"
 DISCORD_URL = "https://discord.gg/mouredev"
+TWITCH_URL = "https://twitch.tv/mouredev"
 
 # Newsletter
 NEWSLETTER_URL = "https://newsletter.moure.dev"
 
 # Recursos y más
+RESOURCES_URL = "https://mouredev.pro/recursos"
 BOOK_URL = "https://mouredev.com/libro-git"
+YOUTUBE_SECONDARY_URL = "https://youtube.com/@mouredevtv"
 BOOKS_URL = "https://amazon.es/shop/mouredev/list/2ZIHJJFJ9AVZ3"
 SETUP_URL = "https://mouredev.com/setup"
 MOUREDEV_URL = "https://mouredev.com"

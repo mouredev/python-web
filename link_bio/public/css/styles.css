@@ -1,0 +1,15 @@
+body {
+    background-color: #1A1A1A;
+}
+
+a:hover {
+    color: #3EB0F9 !important;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+}
