@@ -21,7 +21,7 @@ def newsletter() -> rx.Component:
         rx.hstack(
             rx.icon("mail-check"),
             rx.text(
-                "Más de 90.000 ya siguen mis novedades y consejos",
+                "Más de 90.000 personas ya siguen mis novedades y consejos",
                 color=TextColor.LIGHT.value,
                 size=Spacing.MEDIUM_SMALL.value
             ),
