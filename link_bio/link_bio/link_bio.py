@@ -33,10 +33,15 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '509505096385581');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=509505096385581&ev=PageView&noscript=1"
-/></noscript>
 """
+        ),
+        rx.el.noscript(
+            rx.image(
+                height="1",
+                width="1",
+                style={"display": "none"},
+                src="https://www.facebook.com/tr?id=509505096385581&ev=PageView&noscript=1"
+            ),
         )
     ],
 )
