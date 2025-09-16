@@ -8,14 +8,14 @@ from .fonts import Font, FontWeight
 # Constants
 MAX_WIDTH = "560px"
 FADEIN_ANIMATION = "animate__animated animate__fadeIn"
-BOUNCEIN_ANIMATION = "animate__animated animate__bounceIn"
+SHAKE_ANIMATION = "animate__animated animate__shakeX"
 
 # Sizes
 
 STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap",
     "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
-    "/css/styles.css"
+    "/css/styles.css",
 ]
 
 
@@ -40,6 +40,7 @@ class Spacing(Enum):
     MEDIUM_BIG = "7"
     VERY_BIG = "9"
 
+
 # Styles
 
 
@@ -53,7 +54,7 @@ BASE_STYLE = {
     rx.heading: {
         "color": TextColor.LIGHT.value,
         "font_family": Font.DEFAULT.value,
-        "font_weight": FontWeight.MEDIUM.value
+        "font_weight": FontWeight.MEDIUM.value,
     },
     rx.button: {
         "width": "100%",
@@ -65,17 +66,9 @@ BASE_STYLE = {
         "color": Color.DARK.value,
         "border": f"1px solid {Color.LIGHT.value}",
         "box_shadow": f"3px 3px 0px 0px {Color.LIGHT.value}",
-        "_hover": {
-            "box_shadow": "none",
-            "transform": "translate(3px, 3px)"
-        }
+        "_hover": {"box_shadow": "none", "transform": "translate(3px, 3px)"},
     },
-    rx.link: {
-        "color": TextColor.LIGHT.value,
-        "text_decoration": "none",
-        ""
-        "_hover": {}
-    }
+    rx.link: {"color": TextColor.LIGHT.value, "text_decoration": "none", "" "_hover": {}},
 }
 
 title_style = dict(
@@ -90,6 +83,6 @@ image_style = {
     "box_shadow": f"3px 3px 0px 0px {Color.LIGHT.value}",
     "_hover": {
         "box_shadow": f"6px 6px 0px 0px {Color.LIGHT.value}",
-        "transform": "translate(-3px, -3px)"
-    }
+        "transform": "translate(-3px, -3px)",
+    },
 }

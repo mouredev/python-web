@@ -5,43 +5,46 @@ from link_bio.styles.colors import Color
 from link_bio.styles.styles import Size, Spacing
 
 
-def link_button(title: str,
-                body: str,
-                image: str,
-                url: str,
-                is_external=True,
-                highlight_color=None,
-                animated=False) -> rx.Component:
+def link_button(
+    title: str,
+    body: str,
+    image: str,
+    url: str,
+    is_external=True,
+    highlight_color=None,
+    animated=False,
+) -> rx.Component:
 
-    return rx.button(
-        rx.hstack(
-            rx.image(
-                src=image,
-                width=Size.LARGE.value,
-                height=Size.LARGE.value,
-                margin=Size.MEDIUM.value,
-                alt=title
-            ),
-            rx.vstack(
-                rx.text(
-                    title,
-                    size=Spacing.SMALL.value
+    return rx.container(
+        rx.button(
+            rx.hstack(
+                rx.image(
+                    src=image,
+                    width=Size.LARGE.value,
+                    height=Size.LARGE.value,
+                    margin=Size.MEDIUM.value,
+                    alt=title,
                 ),
-                rx.text(
-                    body,
-                    size=Spacing.VERY_SMALL.value
+                rx.vstack(
+                    rx.text(title, size=Spacing.SMALL.value),
+                    rx.text(body, size=Spacing.VERY_SMALL.value),
+                    align_items="start",
+                    spacing=Spacing.VERY_SMALL.value,
+                    padding_y=Size.SMALL.value,
+                    padding_right=Size.SMALL.value,
                 ),
-                align_items="start",
-                spacing=Spacing.VERY_SMALL.value,
-                padding_y=Size.SMALL.value,
-                padding_right=Size.SMALL.value
+                align="center",
+                width="100%",
             ),
-            align="center",
-            width="100%"
+            variant="solid",
+            radius="none",
+            width="100%",
+            background_color=(
+                highlight_color if highlight_color is not None else Color.PRIMARY.value
+            ),
+            on_click=rx.redirect(path=url, is_external=is_external),
         ),
-        variant="solid",
-        radius="none",
-        background_color=highlight_color if highlight_color is not None else Color.PRIMARY.value,
-        class_name=styles.BOUNCEIN_ANIMATION if animated else None,
-        on_click=rx.redirect(path=url, is_external=is_external)
+        class_name=styles.SHAKE_ANIMATION if animated else None,
+        padding=0,
+        width="100%",
     )
