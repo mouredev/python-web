@@ -1,17 +1,27 @@
 import reflex as rx
+
 import link_bio.constants as const
-from link_bio.components.newsletter import newsletter
 from link_bio.components.featured_link import featured_link
-from link_bio.routes import Route
 from link_bio.components.link_button import link_button
+from link_bio.components.newsletter import newsletter
 from link_bio.components.title import title
-from link_bio.styles.styles import Color, Spacing
+from link_bio.routes import Route
 from link_bio.state.PageState import PageState
+from link_bio.styles.styles import Color, Spacing
 
 
 def index_links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
+        link_button(
+            "Curso gratis de Desarrollo con IA",
+            "Apúntate a mi curso 100% gratis, online y con certificado",
+            "/icons/logo_symbol.svg",
+            "https://mouredev.link/cursodesarrolloia",
+            True,
+            Color.GREEN.value,
+            animated=True
+        ),
         link_button(
             "mouredev pro",
             "Estudia programación de manera diferente",
@@ -26,16 +36,16 @@ def index_links() -> rx.Component:
             "/icons/code.svg",
             Route.COURSES.value,
             False,
-            Color.YELLOW.value
+            Color.YELLOW.value,
         ),
-        link_button(
-            "Guías de programación",
-            "Mi listado de guías gratis en PDF para aprender desarrollo",
-            "/icons/book.svg",
-            const.RESOURCES_URL,
-            True,
-            Color.GREEN.value
-        ),
+        # link_button(
+        #     "Guías de programación",
+        #     "Mi listado de guías gratis en PDF para aprender desarrollo",
+        #     "/icons/book.svg",
+        #     const.RESOURCES_URL,
+        #     True,
+        #     Color.GREEN.value
+        # ),
         link_button(
             "Discord",
             "El chat y los grupos de estudio de la comunidad",

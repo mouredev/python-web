@@ -1,15 +1,16 @@
-from click import style
-import reflex as rx
 import datetime
+
+import reflex as rx
+
 import link_bio.constants as const
-from link_bio.styles import styles
-from link_bio.styles.fonts import FontWeight
-from link_bio.styles.styles import Size, Spacing
-from link_bio.styles.colors import Color, TextColor
-from link_bio.components.link_icon import link_icon
 from link_bio.components.info_text import info_text
 from link_bio.components.link_button import link_button
+from link_bio.components.link_icon import link_icon
 from link_bio.state.PageState import PageState
+from link_bio.styles import styles
+from link_bio.styles.colors import Color, TextColor
+from link_bio.styles.fonts import FontWeight
+from link_bio.styles.styles import Size, Spacing
 
 
 def header(details=True) -> rx.Component:
@@ -118,7 +119,7 @@ def header(details=True) -> rx.Component:
                     ),
                     rx.spacer(),
                     info_text(
-                        "2.9M+", "seguidores"
+                        "3M+", "seguidores"
                     ),
                     width="100%"
                 ),
@@ -149,7 +150,7 @@ def header(details=True) -> rx.Component:
                     # )
                 ),
                 rx.text(
-                    f"""
+                    """
                     Soy ingeniero de software freelance
                     fullstack especializado en desarrollo mobile, divulgador y creador de contenido formativo sobre programación.
                     Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
@@ -168,5 +169,7 @@ def header(details=True) -> rx.Component:
     )
 
 
+def experience() -> int:
+    return datetime.date.today().year - 2010
 def experience() -> int:
     return datetime.date.today().year - 2010

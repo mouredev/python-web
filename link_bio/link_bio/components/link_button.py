@@ -1,6 +1,7 @@
 import reflex as rx
-from link_bio.styles.colors import Color
+
 import link_bio.styles.styles as styles
+from link_bio.styles.colors import Color
 from link_bio.styles.styles import Size, Spacing
 
 
@@ -40,7 +41,7 @@ def link_button(title: str,
         ),
         variant="solid",
         radius="none",
-        background_color=highlight_color if highlight_color != None else Color.PRIMARY.value,
+        background_color=highlight_color if highlight_color is not None else Color.PRIMARY.value,
         class_name=styles.BOUNCEIN_ANIMATION if animated else None,
         on_click=rx.redirect(path=url, is_external=is_external)
     )

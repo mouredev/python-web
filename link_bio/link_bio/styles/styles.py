@@ -1,5 +1,7 @@
-import reflex as rx
 from enum import Enum
+
+import reflex as rx
+
 from .colors import Color, TextColor
 from .fonts import Font, FontWeight
 
