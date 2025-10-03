@@ -14,13 +14,13 @@ def index_links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
         link_button(
-            "Curso gratis de Desarrollo con IA",
-            "Apúntate a mi curso 100% gratis, online y con certificado",
+            "Máster de Desarrollo con IA",
+            "Acreditado con Titulación Universitaria",
             "/icons/logo_symbol.svg",
-            "https://mouredev.link/cursodesarrolloia",
+            "https://mouredev.link/masterdesarrolloia",
             True,
             Color.GREEN.value,
-            animated=True
+            animated=True,
         ),
         link_button(
             "mouredev pro",
@@ -28,7 +28,7 @@ def index_links() -> rx.Component:
             "/icons/pro.svg",
             const.PRO_URL,
             True,
-            Color.ORANGE.value
+            Color.ORANGE.value,
         ),
         link_button(
             "Cursos gratis",
@@ -50,13 +50,13 @@ def index_links() -> rx.Component:
             "Discord",
             "El chat y los grupos de estudio de la comunidad",
             "/icons/discord.svg",
-            const.DISCORD_URL
+            const.DISCORD_URL,
         ),
         link_button(
             "YouTube",
             "Cursos y tutoriales sobre desarrollo de software",
             "/icons/youtube.svg",
-            const.YOUTUBE_URL
+            const.YOUTUBE_URL,
         ),
         title("Newsletter"),
         newsletter(),
@@ -65,34 +65,31 @@ def index_links() -> rx.Component:
             rx.vstack(
                 title("Destacado"),
                 rx.flex(
-                    rx.foreach(
-                        PageState.featured_info,
-                        featured_link
-                    ),
+                    rx.foreach(PageState.featured_info, featured_link),
                     flex_direction=["column", "row"],
-                    spacing=Spacing.DEFAULT.value
+                    spacing=Spacing.DEFAULT.value,
                 ),
-                spacing=Spacing.DEFAULT.value
-            )
+                spacing=Spacing.DEFAULT.value,
+            ),
         ),
         title("Recursos y más"),
         link_button(
             "Git y GitHub desde cero",
             "Aquí puedes comprar mi libro en formato físico y eBook",
             "/icons/git.svg",
-            const.BOOK_URL
+            const.BOOK_URL,
         ),
         link_button(
             "Twitch",
             "Transmisiones sobre programación y desarrollo",
             "/icons/twitch.svg",
-            const.TWITCH_URL
+            const.TWITCH_URL,
         ),
         link_button(
             "YouTube | canal secundario",
             "Emisiones en directo destacadas",
             "/icons/youtube.svg",
-            const.YOUTUBE_SECONDARY_URL
+            const.YOUTUBE_SECONDARY_URL,
         ),
         # link_button(
         #     "Libros recomendados",
@@ -116,23 +113,17 @@ def index_links() -> rx.Component:
             "Invítame a un café",
             "¿Quieres ayudarme a que siga creando contenido?",
             "/icons/coffee.svg",
-            const.COFFEE_URL
+            const.COFFEE_URL,
         ),
-
         title("Contacto"),
         link_button(
             "MyPublicInbox",
             "Respuesta rápida y con preferencia",
             "/icons/checkemail.svg",
-            const.MYPUBLICINBOX_URL
+            const.MYPUBLICINBOX_URL,
         ),
-        link_button(
-            "Email",
-            const.EMAIL,
-            "/icons/email.svg",
-            f"mailto:{const.EMAIL}"
-        ),
+        link_button("Email", const.EMAIL, "/icons/email.svg", f"mailto:{const.EMAIL}"),
         width="100%",
         spacing=Spacing.DEFAULT.value,
-        on_mount=PageState.featured_links
+        on_mount=PageState.featured_links,
     )
