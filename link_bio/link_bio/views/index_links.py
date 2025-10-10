@@ -13,15 +13,15 @@ from link_bio.styles.styles import Color, Spacing
 def index_links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
-        link_button(
-            "Máster de Desarrollo con IA",
-            "Acreditado con Titulación Universitaria",
-            "/icons/logo_symbol.svg",
-            "https://mouredev.link/masterdesarrolloia",
-            True,
-            Color.GREEN.value,
-            animated=True,
-        ),
+        # link_button(
+        #     "Máster de Desarrollo con IA",
+        #     "Acreditado con Titulación Universitaria",
+        #     "/icons/logo_symbol.svg",
+        #     "https://mouredev.link/masterdesarrolloia",
+        #     True,
+        #     Color.GREEN.value,
+        #     animated=True,
+        # ),
         link_button(
             "mouredev pro",
             "Estudia programación de manera diferente",
