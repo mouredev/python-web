@@ -40,11 +40,12 @@ GITHUB_STAR_URL = "https://stars.github.com/profiles/mouredev"
 RAIOLA_NETWORKS_URL = "https://mouredev.link/raiola"
 
 # Cursos
-CODE_CHALLENGES_URL = "https://retosdeprogramacion.com"
+DEVIA_COURSE_URL = "https://mouredev.link/apuntesycertificado"
 BASH_COURSE_URL = "https://mouredev.link/bash"
 JAVA_COURSE_URL = "https://mouredev.link/java"
 PYTHON_COURSE_URL = "https://mouredev.link/python"
 JS_COURSE_URL = "https://mouredev.link/javascript"
 GIT_COURSE_URL = "https://mouredev.link/git"
 SQL_COURSE_URL = "https://mouredev.link/sql"
+CODE_CHALLENGES_URL = "https://retosdeprogramacion.com"
 LANGUAGES_COURSE_URL = "https://mouredev.link/lenguajes"

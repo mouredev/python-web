@@ -11,8 +11,14 @@ def courses_links() -> rx.Component:
     return rx.vstack(
         title("Cursos gratis"),
         link_button(
+            "Desarrollo con IA",
+            "Curso de 3h de desarrollo con IA con certificado gratis",
+            "/icons/ai.svg",
+            const.DEVIA_COURSE_URL,
+        ),
+        link_button(
             "Bash/Shell desde cero",
-            "Curso de terminal, línea de comandos y scripting",
+            "Curso de 6h de terminal, línea de comandos y scripting",
             "/icons/terminal.svg",
             const.BASH_COURSE_URL,
         ),
