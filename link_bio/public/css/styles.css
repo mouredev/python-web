@@ -1,3 +1,5 @@
+/* General */
+
 body {
     background-color: #1A1A1A;
 }
@@ -7,9 +9,35 @@ a:hover {
 }
 
 @keyframes blinker {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
 }
 
 .blink {
     animation: blinker 1.5s linear infinite;
+}
+
+/* Snow */
+
+#SnowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #F7F7F7;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.snowflake:hover {
+    cursor: default;
 }

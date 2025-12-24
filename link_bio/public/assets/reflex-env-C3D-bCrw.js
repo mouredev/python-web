@@ -1,1 +1,0 @@
-var e={PING:`https://api.moure.dev/ping`,EVENT:`wss://api.moure.dev/_event`,UPLOAD:`https://api.moure.dev/_upload`,AUTH_CODESPACE:`https://api.moure.dev/auth-codespace`,HEALTH:`https://api.moure.dev/_health`,ALL_ROUTES:`https://api.moure.dev/_all_routes`,TEST_MODE:!1};export{e as t};
