@@ -9,8 +9,8 @@ from link_bio.styles.styles import Spacing
 def newsletter() -> rx.Component:
     return rx.vstack(
         link_button(
-            "mouredev.log",
-            "La newsletter de la comunidad para mantenerse al día",
+            "mouredev.log();",
+            "La newsletter de la comunidad para aprender, crecer y avanzar",
             "/icons/news.svg",
             const.NEWSLETTER_URL,
         ),
@@ -21,7 +21,7 @@ def newsletter() -> rx.Component:
         rx.hstack(
             rx.icon("mail-check"),
             rx.text(
-                "Más de 100.000 personas ya siguen mis novedades y consejos",
+                "Más de 100.000 personas ya siguen mis consejos semanales",
                 color=TextColor.LIGHT.value,
                 size=Spacing.MEDIUM_SMALL.value,
             ),
