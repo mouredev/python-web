@@ -1,1 +1,1 @@
-SNOW = True
+SNOW = False
