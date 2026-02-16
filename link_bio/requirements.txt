@@ -1,5 +1,5 @@
-pip==25.3
-reflex==0.8.24.post1
+pip==26.0.1
+reflex==0.8.26
 python-dotenv==1.0.1
 supabase==2.13.0
 configcat-client==9.0.4

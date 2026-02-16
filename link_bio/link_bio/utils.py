@@ -1,6 +1,7 @@
-import reflex as rx
-import pytz
 from datetime import datetime, timedelta
+
+import pytz
+import reflex as rx
 
 # Común
 
@@ -15,8 +16,10 @@ _meta = [
     {"name": "og:type", "content": "website"},
     {"name": "og:image", "content": preview},
     {"name": "twitter:card", "content": "summary_large_image"},
-    {"name": "twitter:site", "content": "@mouredev"}
+    {"name": "twitter:site", "content": "@mouredev"},
 ]
+
+BEEHIIV_SCRIPT = "https://subscribe-forms.beehiiv.com/embed.js"
 
 # Index
 
@@ -51,7 +54,7 @@ WEEKDAYS = {
     3: "Jueves",
     4: "Viernes",
     5: "Sábado",
-    6: "Domingo"
+    6: "Domingo",
 }
 
 MONTHS = {
@@ -66,7 +69,7 @@ MONTHS = {
     9: "Septiembre",
     10: "Octubre",
     11: "Noviembre",
-    12: "Diciembre"
+    12: "Diciembre",
 }
 
 
@@ -86,24 +89,30 @@ def next_date(dates: dict, timezone: str) -> str:
         if current_weekday not in dates or dates[current_weekday] == "":
             continue
 
-        time_utc = datetime.strptime(dates[current_weekday], "%H:%M").replace(
-            tzinfo=pytz.UTC).timetz()
+        time_utc = (
+            datetime.strptime(dates[current_weekday], "%H:%M").replace(tzinfo=pytz.UTC).timetz()
+        )
 
-        next_time = datetime.combine(
-            now.date(), time_utc).astimezone(tz).timetz()
+        next_time = datetime.combine(now.date(), time_utc).astimezone(tz).timetz()
 
         if current_time < next_time or weekday > 0:
 
             next_date = now + timedelta(days=weekday)
 
             local_date = datetime(
-                next_date.year, next_date.month, next_date.day,
-                time_utc.hour, time_utc.minute, tzinfo=pytz.UTC).astimezone(tz)
+                next_date.year,
+                next_date.month,
+                next_date.day,
+                time_utc.hour,
+                time_utc.minute,
+                tzinfo=pytz.UTC,
+            ).astimezone(tz)
 
             day = "Hoy" if weekday == 0 else WEEKDAYS[local_date.weekday()]
-            zones = timezone.replace('_', ' ').split('/')
+            zones = timezone.replace("_", " ").split("/")
 
             return local_date.strftime(
-                f"{day}, %d de {MONTHS[local_date.month]} a las %H:%M | Zona horaria: {zones[len(zones) - 1]}")
+                f"{day}, %d de {MONTHS[local_date.month]} a las %H:%M | Zona horaria: {zones[len(zones) - 1]}"
+            )
 
     return ""

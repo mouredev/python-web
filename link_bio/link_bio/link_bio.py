@@ -1,17 +1,19 @@
 import reflex as rx
+
 import link_bio.constants as const
 import link_bio.styles.styles as styles
-from link_bio.pages.index import index
-from link_bio.pages.courses import courses
+from link_bio import utils
 from link_bio.api.api import fastapi_app
+from link_bio.pages.courses import courses  # noqa: F401
+from link_bio.pages.index import index  # noqa: F401
 
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
     style=styles.BASE_STYLE,
     api_transformer=fastapi_app,
     head_components=[
-        rx.script(
-            src=f"https://www.googletagmanager.com/gtag/js?id={const.G_TAG}"),
+        rx.script(src=utils.BEEHIIV_SCRIPT, async_=True),
+        rx.script(src=f"https://www.googletagmanager.com/gtag/js?id={const.G_TAG}"),
         rx.script(
             f"""
 window.dataLayer = window.dataLayer || [];
@@ -39,8 +41,8 @@ fbq('track', 'PageView');
                 height="1",
                 width="1",
                 style={"display": "none"},
-                src="https://www.facebook.com/tr?id=509505096385581&ev=PageView&noscript=1"
+                src="https://www.facebook.com/tr?id=509505096385581&ev=PageView&noscript=1",
             ),
-        )
+        ),
     ],
 )
