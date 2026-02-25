@@ -23,6 +23,15 @@ def index_links() -> rx.Component:
         #     animated=True,
         # ),
         link_button(
+            "NUEVO Curso gratis de Desarrollo con IA 2026",
+            "Apúntate a mi curso 100% gratis, online y con certificado",
+            "/icons/logo_symbol.svg",
+            "https://mouredev.link/cursodesarrolloia2026",
+            True,
+            Color.GREEN.value,
+            animated=True,
+        ),
+        link_button(
             "mouredev pro",
             "Estudia programación de manera diferente",
             "/icons/pro.svg",
