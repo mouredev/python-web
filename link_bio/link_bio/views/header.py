@@ -65,13 +65,9 @@ def header(details=True) -> rx.Component:
                     link_icon("/icons/instagram.svg", const.INSTAGRAM_URL, "Instagram"),
                     link_icon("/icons/tiktok.svg", const.TIKTOK_URL, "TikTok"),
                     link_icon("/icons/facebook.svg", const.FACEBOOK_URL, "Facebook"),
-                    # link_icon(
-                    #     "/icons/spotify.svg",
-                    #     const.SPOTIFY_URL,
-                    #     "Spotify"
-                    # ),
+                    link_icon("/icons/spotify.svg", const.SPOTIFY_URL, "Spotify"),
                     link_icon("/icons/linkedin.svg", const.LINKEDIN_URL, "LinkedIn"),
-                    spacing=Spacing.DEFAULT.value,
+                    spacing=rx.breakpoints(initial=Spacing.SMALL.value, xs=Spacing.DEFAULT.value),
                     padding_top=Size.SMALL.value,
                 ),
                 spacing=Spacing.ZERO.value,

@@ -7,7 +7,7 @@ TWITTER_X_URL = "https://twitter.com/mouredev"
 INSTAGRAM_URL = "https://instagram.com/mouredev"
 TIKTOK_URL = "https://tiktok.com/@mouredev"
 FACEBOOK_URL = "https://facebook.com/mouredev"
-SPOTIFY_URL = "https://open.spotify.com/show/4iKXt5k2zCbAQOrMePh7qh"
+SPOTIFY_URL = "https://open.spotify.com/show/0HFmaAOJTJ57nc6mQD4vJA"
 LINKEDIN_URL = "https://linkedin.com/in/braismoure/"
 
 # Comunidad
