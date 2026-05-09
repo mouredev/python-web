@@ -66,8 +66,8 @@ def courses_links() -> rx.Component:
         ),
         title("Mucho más en"),
         link_button(
-            "mouredev pro",
-            "Estudia programación desde cero en mi academia",
+            "Mi academia",
+            "Estudia programación desde cero en mouredev pro",
             "/icons/pro.svg",
             const.PRO_URL,
             True,

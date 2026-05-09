@@ -31,8 +31,8 @@ def index_links() -> rx.Component:
             Color.YELLOW.value,
         ),
         link_button(
-            "mouredev pro",
-            "Estudia programación desde ceroen mi academia",
+            "Mi academia",
+            "Estudia programación desde cero en mouredev pro",
             "/icons/pro.svg",
             const.PRO_URL,
             True,
