@@ -23,20 +23,20 @@ def index_links() -> rx.Component:
         #     animated=True,
         # ),
         link_button(
-            "mouredev pro",
-            "Estudia programación de manera diferente",
-            "/icons/pro.svg",
-            const.PRO_URL,
-            True,
-            Color.ORANGE.value,
-        ),
-        link_button(
             "Cursos gratis",
             "Consulta mis tutoriales para aprender programación",
             "/icons/code.svg",
             Route.COURSES.value,
             False,
             Color.YELLOW.value,
+        ),
+        link_button(
+            "mouredev pro",
+            "Estudia programación desde ceroen mi academia",
+            "/icons/pro.svg",
+            const.PRO_URL,
+            True,
+            Color.ORANGE.value,
         ),
         link_button(
             "Máster de Desarrollo con IA",

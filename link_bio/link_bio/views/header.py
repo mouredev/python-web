@@ -114,11 +114,7 @@ def header(details=True) -> rx.Component:
                     # )
                 ),
                 rx.text(
-                    """
-                    Soy ingeniero de software freelance
-                    fullstack especializado en desarrollo mobile, divulgador y creador de contenido formativo sobre programación.
-                    Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
-                    """,
+                    "Soy ingeniero de software y divulgador. Te enseño programación e inteligencia artificial desde cero. Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!",
                     font_size=Size.DEFAULT.value,
                     color=TextColor.LIGHT.value,
                 ),

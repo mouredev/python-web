@@ -23,8 +23,8 @@ BEEHIIV_SCRIPT = "https://subscribe-forms.beehiiv.com/embed.js"
 
 # Index
 
-index_title = "MoureDev | Te enseño programación y desarrollo de software"
-index_description = "Hola, mi nombre es Brais Moure. Soy ingeniero de software, desarrollador freelance full-stack y divulgador."
+index_title = "MoureDev | Aprende programación e inteligencia artificial desde cero"
+index_description = "Hola, mi nombre es Brais Moure. Soy ingeniero de software, desarrollador freelance y divulgador."
 
 index_meta = [
     {"name": "og:title", "content": index_title},
@@ -35,7 +35,7 @@ index_meta.extend(_meta)
 # Cursos
 
 courses_title = "MoureDev | Cursos gratis de programación"
-courses_description = "Este es un listado con algunos cursos gratis para aprender programación y desarrollo de software. Python, SQL, Git..."
+courses_description = "Este es un listado con algunos cursos gratis para aprender programación y desarrollo de software. Python, JavaScript, Java, SQL, Git..."
 
 courses_meta = [
     {"name": "og:title", "content": courses_title},
