@@ -22,7 +22,7 @@ rx.button() # Ahora este será el botón de Radix
 rx.chakra.button() # Anterior botón de Chakra
 ```
 
-Aquí tienes [un artículo](https://reflex.dev/blog/2024-02-16-reflex-v0.4.0) con toda la información sobre la nueva versión.
+Aquí tienes [un artículo](https://reflex.dev/blog/2024-02-16-reflex-v0-4-0/) con toda la información sobre la nueva versión.
 
 ## Curso de Python Web: Tutorial en vídeo
 
