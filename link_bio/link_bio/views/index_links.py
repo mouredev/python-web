@@ -1,6 +1,5 @@
-import reflex as rx
-
 import link_bio.constants as const
+import reflex as rx
 from link_bio.components.featured_link import featured_link
 from link_bio.components.link_button import link_button
 from link_bio.components.newsletter import newsletter
@@ -13,15 +12,15 @@ from link_bio.styles.styles import Color, Spacing
 def index_links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
-        link_button(
-            "Curso de Desarrollo con IA: Programa con agentes",
-            "Apúntate a mi curso 100% gratis, online y con certificado",
-            "/icons/logo_symbol.svg",
-            "https://mouredev.link/cursoagentes",
-            True,
-            Color.GREEN.value,
-            animated=True,
-        ),
+        # link_button(
+        #     "Curso de Desarrollo con IA: Programa con agentes",
+        #     "Apúntate a mi curso 100% gratis, online y con certificado",
+        #     "/icons/logo_symbol.svg",
+        #     "https://mouredev.link/cursoagentes",
+        #     True,
+        #     Color.GREEN.value,
+        #     animated=True,
+        # ),
         link_button(
             "Cursos gratis",
             "Consulta mis tutoriales para aprender programación",
