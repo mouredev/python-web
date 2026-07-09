@@ -40,7 +40,7 @@ GITHUB_STAR_URL = "https://stars.github.com/profiles/mouredev"
 RAIOLA_NETWORKS_URL = "https://mouredev.link/raiola"
 
 # Cursos
-DEVIA_COURSE_URL = "https://mouredev.link/apuntesycertificado"
+DEVIA_COURSE_URL = "https://youtu.be/H3gH_Fe6xvs"
 BASH_COURSE_URL = "https://mouredev.link/bash"
 JAVA_COURSE_URL = "https://mouredev.link/java"
 PYTHON_COURSE_URL = "https://mouredev.link/python"
