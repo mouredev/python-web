@@ -12,6 +12,14 @@ from link_bio.styles.styles import Color, Spacing
 def index_links() -> rx.Component:
     return rx.vstack(
         title("Comunidad"),
+        link_button(
+            "Cursos gratis",
+            "Consulta mis tutoriales para aprender programación",
+            "/icons/code.svg",
+            Route.COURSES.value,
+            False,
+            Color.YELLOW.value,
+        ),
         # link_button(
         #     "Curso de Desarrollo con IA: El nuevo programador",
         #     "Apúntate a mi curso 100% gratis, online y con certificado",
@@ -21,14 +29,6 @@ def index_links() -> rx.Component:
         #     Color.GREEN.value,
         #     animated=True,
         # ),
-        link_button(
-            "Cursos gratis",
-            "Consulta mis tutoriales para aprender programación",
-            "/icons/code.svg",
-            Route.COURSES.value,
-            False,
-            Color.YELLOW.value,
-        ),
         link_button(
             "Mi academia",
             "Estudia programación desde cero en mouredev pro",
