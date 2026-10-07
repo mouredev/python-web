@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link as="style" href="/assets/__reflex_global_styles-BcuSdQ-l.css" rel="preload"/><link rel="modulepreload" href="/assets/manifest-2c0d5296.js"/><link rel="modulepreload" href="/assets/entry.client-dNVOKTyN.js"/><link rel="modulepreload" href="/assets/components-DzQT6F3y.js"/><link rel="modulepreload" href="/assets/errorBoundaries-C2delMrB.js"/><link rel="modulepreload" href="/assets/root-Aa6R1Yhs.js"/><link rel="modulepreload" href="/assets/Helmet-BocjiV_W.js"/><link rel="modulepreload" href="/assets/reflex-env-CjjY-BRj.js"/><link rel="modulepreload" href="/assets/emotion-react.browser.esm-BUuhssUM.js"/><script>
+// Only run in browser environment, not during SSR
+if (typeof document !== 'undefined') {
+    try {
+        const theme = localStorage.getItem("theme") || 'system';
+        const systemPreference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const resolvedTheme = theme === "system" ? systemPreference : theme;
+
+        // Apply theme immediately - blocks until complete
+        // Use classList to avoid overwriting other classes
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(resolvedTheme);
+        document.documentElement.style.colorScheme = resolvedTheme;
+
+    } catch (e) {
+        // Fallback to system preference on any error (resolve "system" to actual theme)
+        const fallbackTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(fallbackTheme);
+        document.documentElement.style.colorScheme = fallbackTheme;
+    }
+}
+</script><noscript><style data-emotion="css ehrkts">.css-ehrkts{display:none;height:1;width:1;}</style><img src="https://www.facebook.com/tr?id=509505096385581&amp;ev=PageView&amp;noscript=1" class="css-ehrkts"/></noscript><link href="/assets/__reflex_global_styles-BcuSdQ-l.css" rel="stylesheet" type="text/css"/></head><body><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false" data-react-aria-top-layer="true"></section><style data-emotion="css hzase2">.css-hzase2{font-family:Poppins;--default-font-family:Poppins;font-weight:400;background-color:#1A1A1A;background-image:url('/bg_dark_pattern.png');background-repeat:repeat;background-attachment:fixed;}</style><div data-is-root-theme="true" data-accent-color="blue" data-gray-color="slate" data-has-background="true" data-panel-background="translucent" data-radius="medium" data-scaling="100%" class="radix-themes css-hzase2"><style data-emotion="css 17rg0dp">.css-17rg0dp{position:fixed;width:100vw;height:0;}</style><div title="Connection Error: " class="css-17rg0dp"></div></div><script>window.__reactRouterContext = {"basename":"/","future":{"unstable_enableNodeReadableStream":false,"unstable_optimizeDeps":true},"routeDiscovery":{"mode":"initial"},"ssr":false,"isSpaMode":true};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">import "/assets/manifest-2c0d5296.js";
+import * as route0 from "/assets/root-Aa6R1Yhs.js";
+  
+  window.__reactRouterRouteModules = {"root":route0};
+
+import("/assets/entry.client-dNVOKTyN.js");</script><!--$--><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_3\":-5,\"_4\":-5},\"loaderData\",{},\"actionData\",\"errors\"]\n");</script><!--$--><script>window.__reactRouterContext.streamController.close();</script><!--/$--><!--/$--></body></html>
