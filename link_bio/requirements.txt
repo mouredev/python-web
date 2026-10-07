@@ -1,7 +1,7 @@
-pip==26.0.1
-reflex==0.8.28
+pip==26.2.1
+reflex==0.9.12
 python-dotenv==1.0.1
 supabase==2.13.0
 configcat-client==9.0.4
 pytz==2025.1
-fastapi==0.116.1
+fastapi==0.142.2
